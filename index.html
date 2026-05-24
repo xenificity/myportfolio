@@ -97,6 +97,7 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div id="particles-js"></div>
     <div class="hero-container" data-aos="fade-in">
       <h1>Ajay Kumar</h1>
       <p>I'm <span class="typed" data-typed-items="a doctoral scholar, a computer researcher , a Learner for life"></span></p>
@@ -1281,6 +1282,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <div class="trailing-cursor"></div>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -1461,6 +1463,29 @@
         });
       }
 
+    });
+  </script>
+  <script>
+    // ── Particles.js Hero ──────────────────────────────────────
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof particlesJS !== 'undefined') {
+        particlesJS('particles-js', {
+          particles: {
+            number: { value: 60, density: { enable: true, value_area: 800 } },
+            color: { value: '#149ddd' },
+            opacity: { value: 0.35, random: true },
+            size: { value: 3, random: true },
+            line_linked: { enable: true, distance: 130, color: '#149ddd', opacity: 0.2, width: 1 },
+            move: { enable: true, speed: 2, direction: 'none', random: true, out_mode: 'out' }
+          },
+          interactivity: {
+            detect_on: 'canvas',
+            events: { onhover: { enable: true, mode: 'grab' }, onclick: { enable: true, mode: 'push' }, resize: true },
+            modes: { grab: { distance: 140, line_linked: { opacity: 0.5 } }, push: { particles_nb: 3 } }
+          },
+          retina_detect: true
+        });
+      }
     });
   </script>
   <script>
