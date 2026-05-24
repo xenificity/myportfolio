@@ -24,6 +24,9 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- Leaflet Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -40,6 +43,16 @@
 
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- Dark mode toggle -->
+  <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle dark mode">
+    <i class="bi bi-moon-fill" id="darkModeIcon"></i>
+  </button>
+
+  <!-- Download CV -->
+  <a href="assets/files/AjayKumar_CV.pdf" class="download-cv-btn" download title="Download CV">
+    <i class="bi bi-download"></i> Download CV
+  </a>
 
   <!-- ======= Header ======= -->
   <header id="header">
@@ -63,6 +76,8 @@
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <li><a href="#achievements" class="nav-link scrollto"><i class="bx bx-trophy"></i> <span>Achievements</span></a></li>
+          <li><a href="#publications" class="nav-link scrollto"><i class="bx bx-book-open"></i> <span>Publications</span></a></li>
+          <li><a href="#talks" class="nav-link scrollto"><i class="bx bx-microphone"></i> <span>Talks</span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
           <li><a href="#skills-programming" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Skills</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
@@ -118,12 +133,15 @@
               </div>
             </div>
             <p>
-              Training 10,000 hours to become a proficient coder sooner with problem-solving skills in interdisciplinary areas. Trained 100+ scientists on writing codes through conferences, and training sessions. Worked with 200+ researchers on diverse research problems. 
-
-              Currently, working on gaining computer science skills working with Dr. Praveen Rao in the Scalable Data Science (SDS) lab. 
-              
-              Feel free to reach out at ajay.kumar@missouri.edu
+              Training 10,000 hours to become a proficient coder with problem-solving skills in interdisciplinary areas. Trained 100+ scientists through conferences and workshops. Worked with 200+ researchers on diverse research problems at the Scalable Data Science (SDS) Lab under Dr. Praveen Rao.
             </p>
+
+            <!-- GitHub Activity -->
+            <div class="github-activity-wrap mt-3">
+              <a href="https://github.com/xenificity" target="_blank">
+                <img src="https://ghchart.rshah.org/149ddd/xenificity" alt="Ajay Kumar GitHub contribution chart">
+              </a>
+            </div>
           </div>
         </div>
 
@@ -472,6 +490,222 @@
       </div>
     </section><!-- End Key Achievements Section -->
 
+    <!-- ======= Publications Section ======= -->
+    <section id="publications" class="publications">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Publications</h2>
+          <p>Research contributions in distributed computing, genomics, machine learning, and AI. <a href="https://scholar.google.com/citations?user=lVXFrj0AAAAJ&hl=en&authuser=2" target="_blank">Full list on Google Scholar &rarr;</a></p>
+        </div>
+
+        <!-- Research Metrics -->
+        <div class="metrics-strip" data-aos="fade-up">
+          <div class="metric-box">
+            <span class="metric-number">18</span>
+            <span class="metric-label">Citations</span>
+            <span class="metric-src">Google Scholar</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-number">2</span>
+            <span class="metric-label">h-index</span>
+            <span class="metric-src">Google Scholar</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-number">7+</span>
+            <span class="metric-label">Papers</span>
+            <span class="metric-src">Int'l Venues</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-number">2</span>
+            <span class="metric-label">Conferences</span>
+            <span class="metric-src">ACM BCB &amp; CIKM</span>
+          </div>
+        </div>
+
+        <!-- Filter -->
+        <div class="pub-filter mt-4" data-aos="fade-up">
+          <button class="pub-filter-btn active" data-filter="all">All</button>
+          <button class="pub-filter-btn" data-filter="journal">Journal</button>
+          <button class="pub-filter-btn" data-filter="conference">Conference</button>
+          <button class="pub-filter-btn" data-filter="preprint">Preprint</button>
+        </div>
+
+        <!-- Publications List -->
+        <div id="pub-list" data-aos="fade-up">
+
+          <div class="pub-item" data-type="journal">
+            <div class="pub-year">2025</div>
+            <div class="pub-content">
+              <div class="pub-title"><a href="https://www.frontiersin.org/journals/big-data/articles/10.3389/fdata.2024.1466391/full" target="_blank">A Scalable Tool for Analyzing Genomic Variants of Humans Using Knowledge Graphs and Graph Machine Learning</a></div>
+              <div class="pub-authors">S. Prasanna, <strong>A. Kumar</strong>, D. Rao, E.J. Simoes, P. Rao</div>
+              <div class="pub-venue">Frontiers in Big Data, 2025</div>
+              <div class="pub-badges">
+                <span class="pub-badge b-journal">Journal</span>
+                <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 1 citation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pub-item" data-type="conference">
+            <div class="pub-year">2025</div>
+            <div class="pub-content">
+              <div class="pub-title"><a href="https://dl.acm.org/doi/abs/10.1145/3768322.3769016" target="_blank">Optimizing the Variant Calling Pipeline Execution on Human Genomes Using GPU-Enabled Machines</a></div>
+              <div class="pub-authors"><strong>A. Kumar</strong>, P. Rao, P. Sanders</div>
+              <div class="pub-venue">16th ACM Conference on Bioinformatics, Computational Biology and Health Informatics (ACM BCB), 2025</div>
+              <div class="pub-badges">
+                <span class="pub-badge b-conference">Conference</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pub-item" data-type="journal">
+            <div class="pub-year">2024</div>
+            <div class="pub-content">
+              <div class="pub-title">Extreme Trait GWAS (Et-GWAS): Unraveling Rare Variants in the 3,000 Rice Genome</div>
+              <div class="pub-authors">N. Gnanapragasam, V.V. Prasanth, K.T. Sundaram, <strong>A. Kumar</strong>, B. Pahi, et al.</div>
+              <div class="pub-venue">Life Science Alliance, 2024</div>
+              <div class="pub-badges">
+                <span class="pub-badge b-journal">Journal</span>
+                <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 8 citations</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pub-item" data-type="conference">
+            <div class="pub-year">2024</div>
+            <div class="pub-content">
+              <div class="pub-title"><a href="https://dl.acm.org/doi/abs/10.1145/3627673.3679221" target="_blank">A Scalable Tool for Democratizing Variant Calling on Human Genomes Using Commodity Clusters</a></div>
+              <div class="pub-authors">K. Shehzad, <strong>A. Kumar</strong>, M. Schutz, C. Webb, P. Nalela, M.J. Das, P. Rao</div>
+              <div class="pub-venue">33rd ACM International Conference on Information and Knowledge Management (CIKM), Demo Track, 2024</div>
+              <div class="pub-badges">
+                <span class="pub-badge b-conference">Conference</span>
+                <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 1 citation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pub-item" data-type="preprint">
+            <div class="pub-year">2024</div>
+            <div class="pub-content">
+              <div class="pub-title">G2PDeep-v2: A Web-Based Deep-Learning Framework for Phenotype Prediction and Biomarker Discovery Using Multi-Omics Data</div>
+              <div class="pub-authors">S. Zeng, T. Adusumilli, S.Z. Awan, M.S. Immadi, D. Xu, T. Joshi</div>
+              <div class="pub-venue">bioRxiv, 2024 &nbsp;&bull;&nbsp; <a href="https://g2pdeep.org/" target="_blank">g2pdeep.org</a></div>
+              <div class="pub-badges">
+                <span class="pub-badge b-preprint">Preprint</span>
+                <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 3 citations</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pub-item" data-type="preprint">
+            <div class="pub-year">2023</div>
+            <div class="pub-content">
+              <div class="pub-title">DeepMap: A Deep Learning-Based Model with a Four-Line Code for Prediction-Based Breeding in Crops</div>
+              <div class="pub-authors"><strong>A. Kumar</strong>, K.T. Sundaram, N. Gnanapragasam, U.M. Singh, K.J. Pranesh, et al.</div>
+              <div class="pub-venue">bioRxiv, 2023 &nbsp;&bull;&nbsp; <a href="https://test.pypi.org/project/DeepMap-1.0/" target="_blank">PyPI: DeepMap</a></div>
+              <div class="pub-badges">
+                <span class="pub-badge b-preprint">Preprint</span>
+                <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 1 citation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pub-item" data-type="journal">
+            <div class="pub-year">2022</div>
+            <div class="pub-content">
+              <div class="pub-title">Health Monitoring System Based on IoT</div>
+              <div class="pub-authors">T. Ragupathi, A.N. Kumar, S. Prasanna</div>
+              <div class="pub-venue">International Journal of Health Sciences, 2022</div>
+              <div class="pub-badges">
+                <span class="pub-badge b-journal">Journal</span>
+                <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 2 citations</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pub-item" data-type="conference">
+            <div class="pub-year">2022</div>
+            <div class="pub-content">
+              <div class="pub-title">Develop and Study the Bakelite RPCs Using Linseed Oil Coating</div>
+              <div class="pub-authors">R. Karnam, V.K.S. Kashyap, <strong>A. Kumar</strong>, B. Mohanty</div>
+              <div class="pub-venue">High Energy Physics Symposium, 2022</div>
+              <div class="pub-badges">
+                <span class="pub-badge b-conference">Conference</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pub-item" data-type="conference">
+            <div class="pub-year">2022</div>
+            <div class="pub-content">
+              <div class="pub-title">Characterization of a Prototype Single ThGEM Detector</div>
+              <div class="pub-authors">D. Shekar, <strong>A. Kumar</strong>, V.K.S. Kashyap, S.S. Dasgupta, B. Mohanty</div>
+              <div class="pub-venue">DAE Symposium on Nuclear Physics, 2022</div>
+              <div class="pub-badges">
+                <span class="pub-badge b-conference">Conference</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- End pub-list -->
+      </div>
+    </section><!-- End Publications Section -->
+
+    <!-- ======= Talks & Conferences Section ======= -->
+    <section id="talks" class="talks section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Talks &amp; Conferences</h2>
+          <p>Presentations and demos at international research venues.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-7">
+
+            <div class="talk-item" data-aos="fade-up">
+              <div class="talk-year-badge">2025<br><small>Talk</small></div>
+              <div class="talk-content">
+                <h5>Optimizing the Variant Calling Pipeline Execution on Human Genomes Using GPU-Enabled Machines</h5>
+                <div class="talk-venue">16th ACM BCB — ACM Conference on Bioinformatics, Computational Biology and Health Informatics</div>
+                <div class="talk-location"><i class="bi bi-geo-alt-fill"></i> USA, 2025</div>
+                <span class="talk-type-badge conf">Conference Talk</span>
+                <a href="https://dl.acm.org/doi/abs/10.1145/3768322.3769016" target="_blank" class="pub-badge b-journal ms-2" style="text-decoration:none;">Paper &rarr;</a>
+              </div>
+            </div>
+
+            <div class="talk-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="talk-year-badge">2024<br><small>Demo</small></div>
+              <div class="talk-content">
+                <h5>A Scalable Tool for Democratizing Variant Calling on Human Genomes Using Commodity Clusters</h5>
+                <div class="talk-venue">33rd ACM CIKM — International Conference on Information and Knowledge Management</div>
+                <div class="talk-location"><i class="bi bi-geo-alt-fill"></i> Boise, ID, USA — October 2024</div>
+                <span class="talk-type-badge demo">Demo Presentation</span>
+                <a href="https://dl.acm.org/doi/abs/10.1145/3627673.3679221" target="_blank" class="pub-badge b-journal ms-2" style="text-decoration:none;">Paper &rarr;</a>
+              </div>
+            </div>
+
+            <div class="talk-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="talk-year-badge">2021<br><small>Training</small></div>
+              <div class="talk-content">
+                <h5>R Programming, GWAS, QTLSeqR, Genomic Selection &amp; Python Automation for Researchers</h5>
+                <div class="talk-venue">International Training Workshop — IRRI South Asia Hub</div>
+                <div class="talk-location"><i class="bi bi-geo-alt-fill"></i> India, 2021 &nbsp;&bull;&nbsp; 100+ scientists trained</div>
+                <span class="talk-type-badge invited">Invited Workshop</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5" data-aos="fade-left">
+            <div id="talk-map"></div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Talks Section -->
+
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
@@ -719,6 +953,72 @@
       </div>
     </section><!-- End Testimonials Section -->
 
+    <!-- ======= News & Updates Section ======= -->
+    <section id="news" class="news section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>News &amp; Updates</h2>
+          <p>Recent highlights from research, awards, and community activities.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-8">
+
+            <div class="news-item">
+              <div class="news-date">2025<br>Pub.</div>
+              <i class="bi bi-journal-check news-icon"></i>
+              <div class="news-content">
+                <p><strong>Paper published</strong> in <em>Frontiers in Big Data</em> — "A Scalable Tool for Analyzing Genomic Variants of Humans Using Knowledge Graphs and Graph Machine Learning"</p>
+              </div>
+            </div>
+
+            <div class="news-item">
+              <div class="news-date">2025<br>Talk</div>
+              <i class="bi bi-mic news-icon"></i>
+              <div class="news-content">
+                <p><strong>Presented</strong> at 16th <strong>ACM BCB Conference</strong> on GPU-optimized variant calling pipeline achieving 2× speedup.</p>
+              </div>
+            </div>
+
+            <div class="news-item">
+              <div class="news-date">Oct 2024<br>Demo</div>
+              <i class="bi bi-display news-icon"></i>
+              <div class="news-content">
+                <p><strong>Demo paper presented</strong> at <strong>ACM CIKM 2024</strong>, Boise, ID — "Democratizing Variant Calling on Human Genomes Using Commodity Clusters"</p>
+              </div>
+            </div>
+
+            <div class="news-item">
+              <div class="news-date">2024<br>Award</div>
+              <i class="bi bi-trophy news-icon"></i>
+              <div class="news-content">
+                <p>Honored with <strong>$2,500 ACM UPE Executive Council Award</strong> for leading international chapter operations as Vice President.</p>
+              </div>
+            </div>
+
+            <div class="news-item">
+              <div class="news-date">2024<br>Grant</div>
+              <i class="bi bi-send news-icon"></i>
+              <div class="news-content">
+                <p>Secured <strong>$5,500 FABRIC competitive travel fellowship</strong> to present research and build global collaborations.</p>
+              </div>
+            </div>
+
+            <div class="news-item">
+              <div class="news-date">2024<br>Pub.</div>
+              <i class="bi bi-journal-check news-icon"></i>
+              <div class="news-content">
+                <p><strong>Paper published</strong> in <em>Life Science Alliance</em> — "Extreme Trait GWAS (Et-GWAS): Unraveling Rare Variants in the 3,000 Rice Genome" &mdash; 8 citations.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End News Section -->
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
@@ -750,6 +1050,10 @@
                 <p>+1 573 801 5748</p>
               </div>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.001717468856!2d-92.33398172362718!3d38.946789143787605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87dcb7c62fc40a85%3A0xe6b7fa7a7a103455!2sNaka%20Hall%2FEngineering%20Building%20West!5e0!3m2!1sen!2sus!4v1711588929149!5m2!1sen!2sus" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              <a href="https://calendly.com/xenificity" target="_blank" class="calendly-btn mt-3">
+                <i class="bi bi-calendar-check"></i> Schedule a Meeting
+              </a>
               </div>
 
           </div>
@@ -819,11 +1123,81 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
+  <!-- Leaflet Map JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <div class="trailing-cursor"></div>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+
+      // ── Dark Mode ──────────────────────────────────────────────
+      const toggle = document.getElementById('darkModeToggle');
+      const icon   = document.getElementById('darkModeIcon');
+      if (localStorage.getItem('darkMode') === 'on') {
+        document.body.classList.add('dark-mode');
+        icon.className = 'bi bi-sun-fill';
+      }
+      toggle.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        icon.className = isDark ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+        localStorage.setItem('darkMode', isDark ? 'on' : 'off');
+      });
+
+      // ── Publication filter ─────────────────────────────────────
+      document.querySelectorAll('.pub-filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.pub-filter-btn').forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          const filter = this.dataset.filter;
+          document.querySelectorAll('.pub-item').forEach(item => {
+            if (filter === 'all' || item.dataset.type === filter) {
+              item.classList.remove('hidden');
+            } else {
+              item.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // ── Talks world map ────────────────────────────────────────
+      const mapEl = document.getElementById('talk-map');
+      if (mapEl) {
+        const map = L.map('talk-map', { scrollWheelZoom: false }).setView([30, 10], 2);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a>',
+          maxZoom: 18
+        }).addTo(map);
+
+        const pinIcon = L.divIcon({
+          className: '',
+          html: '<div style="background:#149ddd;width:12px;height:12px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 6px rgba(20,157,221,0.8)"></div>',
+          iconSize: [12, 12],
+          iconAnchor: [6, 6]
+        });
+        const homeIcon = L.divIcon({
+          className: '',
+          html: '<div style="background:#18d26e;width:14px;height:14px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 8px rgba(24,210,110,0.8)"></div>',
+          iconSize: [14, 14],
+          iconAnchor: [7, 7]
+        });
+
+        const locations = [
+          { lat: 38.95, lng: -92.33, label: '🏠 University of Missouri, Columbia MO', icon: homeIcon },
+          { lat: 43.62, lng: -116.20, label: '🎤 ACM CIKM 2024 — Boise, ID', icon: pinIcon },
+          { lat: 28.61, lng: 77.23,  label: '💼 Internship — New Delhi, India', icon: pinIcon },
+          { lat: 25.32, lng: 83.01,  label: '🎓 BHU &amp; IRRI SAH — Varanasi, India', icon: pinIcon },
+        ];
+        locations.forEach(loc => {
+          L.marker([loc.lat, loc.lng], { icon: loc.icon })
+            .addTo(map)
+            .bindPopup(loc.label);
+        });
+      }
+
+      // ── Trailing cursor ────────────────────────────────────────
       const cursor = document.querySelector('.trailing-cursor');
       let mouseX = 0, mouseY = 0;
       let posX = 0, posY = 0;
