@@ -659,8 +659,8 @@
               <div class="pub-badges">
                 <span class="pub-badge b-journal">Journal</span>
                 <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 1 citation</span>
-                <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               </div>
+              <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               <div class="pub-abstract">A scalable tool for analyzing 650GB of human genomic variants using Knowledge Graphs and Graph Machine Learning on NSF-funded FABRIC and CloudLab distributed infrastructure.</div>
             </div>
           </div>
@@ -673,8 +673,8 @@
               <div class="pub-venue">16th ACM Conference on Bioinformatics, Computational Biology and Health Informatics (ACM BCB), 2025</div>
               <div class="pub-badges">
                 <span class="pub-badge b-conference">Conference</span>
-                <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               </div>
+              <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               <div class="pub-abstract">Optimizes a scalable distributed multi-GPU pipeline achieving 2× speedup for COVID-19 human genome variant calling on FABRIC/CloudLab using Google's JobShop Scheduling with NVIDIA Parabricks.</div>
             </div>
           </div>
@@ -688,8 +688,8 @@
               <div class="pub-badges">
                 <span class="pub-badge b-journal">Journal</span>
                 <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 8 citations</span>
-                <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               </div>
+              <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               <div class="pub-abstract">Novel extreme-trait GWAS methodology for uncovering rare variants across 3,000 rice genomes, enabling precision genomic selection for crop improvement.</div>
             </div>
           </div>
@@ -703,8 +703,8 @@
               <div class="pub-badges">
                 <span class="pub-badge b-conference">Conference</span>
                 <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 1 citation</span>
-                <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               </div>
+              <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               <div class="pub-abstract">Democratizes human genome variant calling by enabling scalable analysis on commodity clusters using Apache Spark, Hadoop, and multi-cloud environments (FABRIC, CloudLab, AWS).</div>
             </div>
           </div>
@@ -718,8 +718,8 @@
               <div class="pub-badges">
                 <span class="pub-badge b-preprint">Preprint</span>
                 <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 3 citations</span>
-                <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               </div>
+              <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               <div class="pub-abstract">Web-based deep learning framework for multi-omics phenotype prediction and biomarker discovery, supporting plant breeders with an accessible web interface at g2pdeep.org.</div>
             </div>
           </div>
@@ -733,8 +733,8 @@
               <div class="pub-badges">
                 <span class="pub-badge b-preprint">Preprint</span>
                 <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 1 citation</span>
-                <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               </div>
+              <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               <div class="pub-abstract">Deep learning model for prediction-based crop breeding that outperforms traditional ML by 13–20%, deployable with a four-line Python interface via PyPI.</div>
             </div>
           </div>
@@ -748,8 +748,8 @@
               <div class="pub-badges">
                 <span class="pub-badge b-journal">Journal</span>
                 <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 2 citations</span>
-                <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               </div>
+              <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               <div class="pub-abstract">Real-time health monitoring system using IoT sensors with ML-based anomaly detection for continuous patient vitals tracking.</div>
             </div>
           </div>
@@ -1314,9 +1314,9 @@
       const icon   = document.getElementById('darkModeIcon');
       if (localStorage.getItem('darkMode') === 'on') {
         document.body.classList.add('dark-mode');
-        icon.className = 'bi bi-sun-fill';
+        if (icon) icon.className = 'bi bi-sun-fill';
       }
-      toggle.addEventListener('click', function() {
+      if (toggle) toggle.addEventListener('click', function() {
         document.body.classList.toggle('dark-mode');
         const isDark = document.body.classList.contains('dark-mode');
         icon.className = isDark ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
@@ -1387,7 +1387,7 @@
       function animate() {
         posX += (mouseX - posX) * 0.1;
         posY += (mouseY - posY) * 0.1;
-        cursor.style.transform = `translate(${posX}px, ${posY}px)`;
+        if (cursor) cursor.style.transform = `translate(${posX}px, ${posY}px)`;
         requestAnimationFrame(animate);
       }
 
@@ -1396,9 +1396,9 @@
       // ── Abstract toggles ───────────────────────────────────────
       document.querySelectorAll('.abstract-toggle').forEach(btn => {
         btn.addEventListener('click', function() {
-          const abstract = this.closest('.pub-content').querySelector('.pub-abstract');
+          const abstract = this.nextElementSibling;
           const icon = this.querySelector('i');
-          if (abstract) {
+          if (abstract && abstract.classList.contains('pub-abstract')) {
             abstract.classList.toggle('open');
             icon.classList.toggle('bi-chevron-down');
             icon.classList.toggle('bi-chevron-up');
