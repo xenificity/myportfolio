@@ -27,6 +27,12 @@
   <!-- Leaflet Map -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <!-- D3.js -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -61,6 +67,7 @@
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Ajay Kumar</a></h1>
+        <div class="open-to-work"><span class="pulse-dot"></span> Open to Opportunities</div>
         <div class="social-links mt-3 text-center">
           <a href="https://www.linkedin.com/in/xenificity/" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
           <a href="https://x.com/xenificity" class="twitter" title="X / Twitter"><i class="bx bxl-twitter"></i></a>
@@ -75,8 +82,10 @@
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#timeline" class="nav-link scrollto"><i class="bx bx-time-five"></i> <span>Journey</span></a></li>
           <li><a href="#achievements" class="nav-link scrollto"><i class="bx bx-trophy"></i> <span>Achievements</span></a></li>
           <li><a href="#publications" class="nav-link scrollto"><i class="bx bx-book-open"></i> <span>Publications</span></a></li>
+          <li><a href="#knowledge-graph" class="nav-link scrollto"><i class="bx bx-network-chart"></i> <span>Research Map</span></a></li>
           <li><a href="#talks" class="nav-link scrollto"><i class="bx bx-microphone"></i> <span>Talks</span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
           <li><a href="#skills-programming" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Skills</span></a></li>
@@ -88,6 +97,7 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div id="particles-js"></div>
     <div class="hero-container" data-aos="fade-in">
       <h1>Ajay Kumar</h1>
       <p>I'm <span class="typed" data-typed-items="a doctoral scholar, a computer researcher , a Learner for life"></span></p>
@@ -141,6 +151,17 @@
               <a href="https://github.com/xenificity" target="_blank">
                 <img src="https://ghchart.rshah.org/149ddd/xenificity" alt="Ajay Kumar GitHub contribution chart">
               </a>
+            </div>
+
+            <!-- Currently Working On Card -->
+            <div class="currently-working-card mt-4" data-aos="fade-up">
+              <div class="cw-header"><i class="bi bi-activity"></i> Currently Working On</div>
+              <div class="cw-items">
+                <div class="cw-item"><span class="cw-icon">&#x1F52C;</span> <strong>PhD Thesis</strong> — Target: Dec 2026 · Distributed computing on FABRIC testbed</div>
+                <div class="cw-item"><span class="cw-icon">&#x1F4DD;</span> <strong>7+ papers published</strong> · ACM BCB, CIKM, Frontiers, Life Science Alliance</div>
+                <div class="cw-item"><span class="cw-icon">&#x1F4BC;</span> <strong>Seeking ML / DS / SWE roles</strong> — Open to full-time industry positions</div>
+                <div class="cw-item cw-github-activity"><span class="cw-icon"><i class="bi bi-github"></i></span> GitHub: <span id="gh-last-active">checking...</span></div>
+              </div>
             </div>
           </div>
         </div>
@@ -378,6 +399,32 @@
       </div>
     </section><!-- End Big Data Section -->
 
+    <!-- ======= Skills Radar Section ======= -->
+    <section id="skills-radar" class="skills-radar skills section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Skill Overview</h2>
+        </div>
+        <div class="row align-items-center" data-aos="fade-up">
+          <div class="col-lg-6 d-flex justify-content-center">
+            <div class="radar-chart-wrap">
+              <canvas id="skillsRadar" width="380" height="380"></canvas>
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+            <h3 class="radar-desc-title">Research &amp; Technical Expertise</h3>
+            <p class="radar-desc">From large-scale distributed computing and GPU-accelerated genomic pipelines to LLM-powered agents and deep learning models — Ajay's skill set spans the full data science stack. With a 4.0 GPA PhD and hands-on experience across academia and industry, he brings both depth and breadth to every problem.</p>
+            <ul class="radar-skill-list">
+              <li><i class="bi bi-check-circle-fill"></i> Machine Learning &amp; Deep Learning (TensorFlow, PyTorch)</li>
+              <li><i class="bi bi-check-circle-fill"></i> Generative AI &amp; LLMs (Agents, RAG, Fine-tuning)</li>
+              <li><i class="bi bi-check-circle-fill"></i> Big Data &amp; Cloud (Spark, Hadoop, AWS, FABRIC)</li>
+              <li><i class="bi bi-check-circle-fill"></i> Bioinformatics &amp; Genomics (GWAS, Variant Calling)</li>
+              <li><i class="bi bi-check-circle-fill"></i> Research &amp; Scientific Writing (7+ publications)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Skills Radar Section -->
 
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
@@ -450,6 +497,75 @@
 
       </div>
     </section><!-- End Resume Section -->
+
+    <!-- ======= Research Timeline Section ======= -->
+    <section id="timeline" class="timeline section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Research Journey</h2>
+          <p>Key milestones from my academic and professional career.</p>
+        </div>
+        <div class="timeline-wrap">
+
+          <div class="timeline-item timeline-left" data-aos="fade-right">
+            <div class="timeline-year-badge">Jun 2019</div>
+            <div class="timeline-card">
+              <h4>Software Engineer Intern · SPA, New Delhi</h4>
+              <p>Built govt urban planning site (15K visitors) &amp; biodiversity Android app</p>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-right" data-aos="fade-left">
+            <div class="timeline-year-badge">Aug 2020</div>
+            <div class="timeline-card">
+              <h4>Research Scientist · IRRI South Asia Hub, India</h4>
+              <p>Led AWS-IRRI partnership, trained 100+ scientists, 4 research papers, 200K+ Quora views</p>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-left" data-aos="fade-right">
+            <div class="timeline-year-badge">Aug 2022</div>
+            <div class="timeline-card">
+              <h4>PhD Student · University of Missouri, USA</h4>
+              <p>Started at SDS Lab under Dr. Praveen Rao. FABRIC, GPU computing, Knowledge Graphs</p>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-right" data-aos="fade-left">
+            <div class="timeline-year-badge">2023</div>
+            <div class="timeline-card">
+              <h4>First Major Paper · VariantKG</h4>
+              <p>Scalable genomic variant analysis on 650GB dataset using Knowledge Graphs &amp; Graph ML</p>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-left" data-aos="fade-right">
+            <div class="timeline-year-badge">2024</div>
+            <div class="timeline-card">
+              <h4>Awards &amp; Recognition</h4>
+              <p>$2,500 ACM UPE Award · $5,500 FABRIC Fellowship · CIKM Demo presentation · Et-GWAS published (8 citations)</p>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-right" data-aos="fade-left">
+            <div class="timeline-year-badge">2025</div>
+            <div class="timeline-card">
+              <h4>Research Output</h4>
+              <p>ACM BCB paper on 2× GPU speedup · Frontiers in Big Data publication · 8,000+ community members</p>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-left timeline-final" data-aos="fade-right">
+            <div class="timeline-year-badge timeline-badge-gold"><i class="bi bi-mortarboard-fill"></i> Dec 2026</div>
+            <div class="timeline-card timeline-card-gold">
+              <h4>PhD Graduation (Expected)</h4>
+              <p>Thesis: Optimized scientific workflows on FABRIC national research testbed</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Timeline Section -->
 
     <!-- ======= Key Achievements Section ======= -->
     <section id="achievements" class="achievements section-bg">
@@ -543,7 +659,9 @@
               <div class="pub-badges">
                 <span class="pub-badge b-journal">Journal</span>
                 <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 1 citation</span>
+                <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               </div>
+              <div class="pub-abstract">A scalable tool for analyzing 650GB of human genomic variants using Knowledge Graphs and Graph Machine Learning on NSF-funded FABRIC and CloudLab distributed infrastructure.</div>
             </div>
           </div>
 
@@ -555,7 +673,9 @@
               <div class="pub-venue">16th ACM Conference on Bioinformatics, Computational Biology and Health Informatics (ACM BCB), 2025</div>
               <div class="pub-badges">
                 <span class="pub-badge b-conference">Conference</span>
+                <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               </div>
+              <div class="pub-abstract">Optimizes a scalable distributed multi-GPU pipeline achieving 2× speedup for COVID-19 human genome variant calling on FABRIC/CloudLab using Google's JobShop Scheduling with NVIDIA Parabricks.</div>
             </div>
           </div>
 
@@ -568,7 +688,9 @@
               <div class="pub-badges">
                 <span class="pub-badge b-journal">Journal</span>
                 <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 8 citations</span>
+                <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               </div>
+              <div class="pub-abstract">Novel extreme-trait GWAS methodology for uncovering rare variants across 3,000 rice genomes, enabling precision genomic selection for crop improvement.</div>
             </div>
           </div>
 
@@ -581,7 +703,9 @@
               <div class="pub-badges">
                 <span class="pub-badge b-conference">Conference</span>
                 <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 1 citation</span>
+                <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               </div>
+              <div class="pub-abstract">Democratizes human genome variant calling by enabling scalable analysis on commodity clusters using Apache Spark, Hadoop, and multi-cloud environments (FABRIC, CloudLab, AWS).</div>
             </div>
           </div>
 
@@ -594,7 +718,9 @@
               <div class="pub-badges">
                 <span class="pub-badge b-preprint">Preprint</span>
                 <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 3 citations</span>
+                <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               </div>
+              <div class="pub-abstract">Web-based deep learning framework for multi-omics phenotype prediction and biomarker discovery, supporting plant breeders with an accessible web interface at g2pdeep.org.</div>
             </div>
           </div>
 
@@ -607,7 +733,9 @@
               <div class="pub-badges">
                 <span class="pub-badge b-preprint">Preprint</span>
                 <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 1 citation</span>
+                <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               </div>
+              <div class="pub-abstract">Deep learning model for prediction-based crop breeding that outperforms traditional ML by 13–20%, deployable with a four-line Python interface via PyPI.</div>
             </div>
           </div>
 
@@ -620,7 +748,9 @@
               <div class="pub-badges">
                 <span class="pub-badge b-journal">Journal</span>
                 <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 2 citations</span>
+                <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
               </div>
+              <div class="pub-abstract">Real-time health monitoring system using IoT sensors with ML-based anomaly detection for continuous patient vitals tracking.</div>
             </div>
           </div>
 
@@ -651,6 +781,28 @@
         </div><!-- End pub-list -->
       </div>
     </section><!-- End Publications Section -->
+
+    <!-- ======= Research Knowledge Graph Section ======= -->
+    <section id="knowledge-graph" class="knowledge-graph section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Research Knowledge Graph</h2>
+          <p>Explore connections between papers, tools, topics and venues — click and drag nodes</p>
+        </div>
+        <div data-aos="fade-up">
+          <div id="kg-container">
+            <svg id="kg-svg"></svg>
+            <div id="kg-tooltip" class="kg-tooltip"></div>
+          </div>
+          <div class="kg-legend">
+            <span class="kg-legend-item"><span class="kg-dot" style="background:#149ddd"></span> Paper</span>
+            <span class="kg-legend-item"><span class="kg-dot" style="background:#f7a737"></span> Topic</span>
+            <span class="kg-legend-item"><span class="kg-dot" style="background:#18d26e"></span> Tool</span>
+            <span class="kg-legend-item"><span class="kg-dot" style="background:#9b59b6"></span> Venue</span>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Knowledge Graph Section -->
 
     <!-- ======= Talks & Conferences Section ======= -->
     <section id="talks" class="talks section-bg">
@@ -1112,6 +1264,28 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <!-- Terminal Easter Egg -->
+  <button id="terminalBtn" title="Open terminal (Ctrl+K)"><i class="bi bi-terminal"></i></button>
+
+  <div id="terminal-overlay" style="display:none;">
+    <div class="terminal-window">
+      <div class="terminal-header">
+        <div class="terminal-dots"><span class="t-dot red"></span><span class="t-dot yellow"></span><span class="t-dot green"></span></div>
+        <span class="terminal-title">ajay@research:~</span>
+        <button class="terminal-close" id="terminalClose">&#x2715;</button>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <div class="terminal-line terminal-welcome">Welcome to Ajay's Research Terminal v1.0</div>
+        <div class="terminal-line terminal-hint">Type <span class="cmd-highlight">help</span> to see available commands. Press <span class="cmd-highlight">Esc</span> or <span class="cmd-highlight">Ctrl+K</span> to close.</div>
+        <div id="terminalOutput"></div>
+        <div class="terminal-input-row">
+          <span class="terminal-prompt">ajay@research:~$&nbsp;</span>
+          <input type="text" id="terminalInput" autocomplete="off" spellcheck="false">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -1125,6 +1299,9 @@
 
   <!-- Leaflet Map JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
@@ -1201,20 +1378,307 @@
       const cursor = document.querySelector('.trailing-cursor');
       let mouseX = 0, mouseY = 0;
       let posX = 0, posY = 0;
-  
+
       document.addEventListener('mousemove', function(e) {
         mouseX = e.clientX;
         mouseY = e.clientY;
       });
-  
+
       function animate() {
         posX += (mouseX - posX) * 0.1;
         posY += (mouseY - posY) * 0.1;
         cursor.style.transform = `translate(${posX}px, ${posY}px)`;
         requestAnimationFrame(animate);
       }
-  
+
       animate();
+
+      // ── Abstract toggles ───────────────────────────────────────
+      document.querySelectorAll('.abstract-toggle').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const abstract = this.closest('.pub-content').querySelector('.pub-abstract');
+          const icon = this.querySelector('i');
+          if (abstract) {
+            abstract.classList.toggle('open');
+            icon.classList.toggle('bi-chevron-down');
+            icon.classList.toggle('bi-chevron-up');
+          }
+        });
+      });
+
+      // ── GitHub last active ─────────────────────────────────────
+      const ghEl = document.getElementById('gh-last-active');
+      if (ghEl) {
+        fetch('https://api.github.com/users/xenificity')
+          .then(r => r.json())
+          .then(data => {
+            const updated = new Date(data.updated_at);
+            const days = Math.floor((Date.now() - updated) / 86400000);
+            ghEl.textContent = days === 0 ? 'active today' : `last active ${days} day${days !== 1 ? 's' : ''} ago`;
+          })
+          .catch(() => { ghEl.textContent = 'github.com/xenificity'; });
+      }
+
+      // ── Terminal Easter Egg ────────────────────────────────────
+      const termBtn = document.getElementById('terminalBtn');
+      const termOverlay = document.getElementById('terminal-overlay');
+      const termClose = document.getElementById('terminalClose');
+      const termInput = document.getElementById('terminalInput');
+      const termOutput = document.getElementById('terminalOutput');
+
+      function openTerminal() {
+        termOverlay.style.display = 'flex';
+        setTimeout(() => termInput && termInput.focus(), 100);
+      }
+      function closeTerminal() {
+        termOverlay.style.display = 'none';
+      }
+
+      if (termBtn) termBtn.addEventListener('click', openTerminal);
+      if (termClose) termClose.addEventListener('click', closeTerminal);
+      if (termOverlay) {
+        termOverlay.addEventListener('click', function(e) {
+          if (e.target === termOverlay) closeTerminal();
+        });
+      }
+      document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && e.key === 'k') { e.preventDefault(); termOverlay && termOverlay.style.display === 'none' ? openTerminal() : closeTerminal(); }
+        if (e.key === 'Escape') closeTerminal();
+      });
+
+      const termCommands = {
+        help: () => `<table class="term-table"><tr><th>Command</th><th>Description</th></tr><tr><td>about</td><td>About Ajay</td></tr><tr><td>publications</td><td>Top papers</td></tr><tr><td>skills</td><td>Technical skills</td></tr><tr><td>contact</td><td>Contact info</td></tr><tr><td>github</td><td>Open GitHub profile</td></tr><tr><td>scholar</td><td>Open Google Scholar</td></tr><tr><td>hire</td><td>Hiring info</td></tr><tr><td>date</td><td>Current date</td></tr><tr><td>whoami</td><td>Identity</td></tr><tr><td>clear</td><td>Clear terminal</td></tr></table>`,
+        about: () => 'PhD Candidate in CS at Mizzou. Researcher in distributed computing, ML, and bioinformatics.',
+        publications: () => '1. [2025] Optimizing Variant Calling Pipeline Using GPU-Enabled Machines — ACM BCB<br>2. [2025] VariantKG: Scalable Genomic Variants using Knowledge Graphs — Frontiers<br>3. [2024] Et-GWAS: Extreme-Trait GWAS on 3,000 Rice Genomes — Life Science Alliance',
+        skills: () => 'Python(100%) | TensorFlow(95%) | Apache Spark(90%) | LLMs(92%) | SQL(88%)',
+        contact: () => '&#x1F4E7; ajay.kumar@missouri.edu | &#x1F4C5; calendly.com/ajay-ducs/30min',
+        github: () => { window.open('https://github.com/xenificity', '_blank'); return '&#x1F419; github.com/xenificity — opening...'; },
+        scholar: () => { window.open('https://scholar.google.com/citations?user=lVXFrj0AAAAJ', '_blank'); return '&#x1F393; Google Scholar — opening...'; },
+        hire: () => '&#x1F680; Open to full-time SWE / DS / ML roles. Email: ajay.kumar@missouri.edu',
+        date: () => new Date().toDateString(),
+        whoami: () => 'ajay-kumar — PhD Candidate, researcher, builder',
+        clear: () => { termOutput.innerHTML = ''; return null; }
+      };
+
+      if (termInput) {
+        termInput.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') {
+            const cmd = this.value.trim().toLowerCase();
+            this.value = '';
+            if (!cmd) return;
+            const cmdLine = document.createElement('div');
+            cmdLine.className = 'terminal-line';
+            cmdLine.innerHTML = `<span class="terminal-prompt-inline">ajay@research:~$</span> ${cmd}`;
+            termOutput.appendChild(cmdLine);
+
+            const respLine = document.createElement('div');
+            respLine.className = 'terminal-line terminal-response';
+            if (termCommands[cmd]) {
+              const result = termCommands[cmd]();
+              if (result !== null) respLine.innerHTML = result;
+            } else {
+              respLine.innerHTML = `Command not found: ${cmd}. Type <span class="cmd-highlight">help</span> for available commands.`;
+            }
+            if (respLine.innerHTML) termOutput.appendChild(respLine);
+            termOutput.scrollTop = termOutput.scrollHeight;
+          }
+        });
+      }
+
+    });
+  </script>
+  <script>
+    // ── Particles.js Hero ──────────────────────────────────────
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof particlesJS !== 'undefined') {
+        particlesJS('particles-js', {
+          particles: {
+            number: { value: 60, density: { enable: true, value_area: 800 } },
+            color: { value: '#149ddd' },
+            opacity: { value: 0.35, random: true },
+            size: { value: 3, random: true },
+            line_linked: { enable: true, distance: 130, color: '#149ddd', opacity: 0.2, width: 1 },
+            move: { enable: true, speed: 2, direction: 'none', random: true, out_mode: 'out' }
+          },
+          interactivity: {
+            detect_on: 'canvas',
+            events: { onhover: { enable: true, mode: 'grab' }, onclick: { enable: true, mode: 'push' }, resize: true },
+            modes: { grab: { distance: 140, line_linked: { opacity: 0.5 } }, push: { particles_nb: 3 } }
+          },
+          retina_detect: true
+        });
+      }
+    });
+
+    // ── Skills Radar Chart ─────────────────────────────────────
+    document.addEventListener('DOMContentLoaded', function() {
+      const radarCanvas = document.getElementById('skillsRadar');
+      if (!radarCanvas || typeof Chart === 'undefined') return;
+
+      const radarLabels = ['Machine Learning','Big Data & Cloud','Generative AI','Programming','Data Analysis','Research & Writing','Web Development','Bioinformatics'];
+      const radarData = [95, 88, 90, 95, 92, 92, 83, 85];
+
+      const isDark = () => document.body.classList.contains('dark-mode');
+      const getGridColor = () => isDark() ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.07)';
+      const getLabelColor = () => isDark() ? '#c9d1d9' : '#444';
+
+      const radarChart = new Chart(radarCanvas, {
+        type: 'radar',
+        data: {
+          labels: radarLabels,
+          datasets: [{
+            label: 'Skill Level',
+            data: radarData,
+            fill: true,
+            backgroundColor: 'rgba(20,157,221,0.2)',
+            borderColor: '#149ddd',
+            pointBackgroundColor: '#149ddd',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: '#149ddd',
+            borderWidth: 2
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } },
+          scales: {
+            r: {
+              min: 0, max: 100,
+              ticks: { stepSize: 20, color: getLabelColor(), backdropColor: 'transparent', font: { size: 10 } },
+              pointLabels: { color: getLabelColor(), font: { size: 12, family: "'Poppins', sans-serif" } },
+              grid: { color: getGridColor() },
+              angleLines: { color: getGridColor() }
+            }
+          }
+        }
+      });
+
+      // Update radar chart on dark mode toggle
+      const darkToggle = document.getElementById('darkModeToggle');
+      if (darkToggle) {
+        darkToggle.addEventListener('click', function() {
+          setTimeout(() => {
+            radarChart.options.scales.r.ticks.color = getLabelColor();
+            radarChart.options.scales.r.pointLabels.color = getLabelColor();
+            radarChart.options.scales.r.grid.color = getGridColor();
+            radarChart.options.scales.r.angleLines.color = getGridColor();
+            radarChart.update();
+          }, 50);
+        });
+      }
+    });
+
+    // ── Research Knowledge Graph (D3.js) ───────────────────────
+    document.addEventListener('DOMContentLoaded', function() {
+      const kgSvg = document.getElementById('kg-svg');
+      if (!kgSvg || typeof d3 === 'undefined') return;
+
+      const nodes = [
+        {id:'gpu-var',label:'GPU Variant Calling',type:'paper'},
+        {id:'variantkg',label:'VariantKG',type:'paper'},
+        {id:'etgwas',label:'Et-GWAS',type:'paper'},
+        {id:'g2pdeep',label:'G2PDeep-v2',type:'paper'},
+        {id:'cikm',label:'CIKM Demo',type:'paper'},
+        {id:'deepmap',label:'DeepMap',type:'paper'},
+        {id:'gpu',label:'GPU Computing',type:'topic'},
+        {id:'kg',label:'Knowledge Graphs',type:'topic'},
+        {id:'dist',label:'Distributed Computing',type:'topic'},
+        {id:'genomics',label:'Genomics',type:'topic'},
+        {id:'mldl',label:'ML / Deep Learning',type:'topic'},
+        {id:'llm',label:'LLMs & Gen AI',type:'topic'},
+        {id:'bigdata',label:'Big Data',type:'topic'},
+        {id:'spark',label:'Apache Spark',type:'tool'},
+        {id:'fabric',label:'FABRIC',type:'tool'},
+        {id:'aws',label:'AWS',type:'tool'},
+        {id:'tf',label:'TensorFlow',type:'tool'},
+        {id:'acmbcb',label:'ACM BCB',type:'venue'},
+        {id:'acmcikm',label:'ACM CIKM',type:'venue'},
+        {id:'frontiers',label:'Frontiers',type:'venue'}
+      ];
+
+      const links = [
+        {source:'gpu-var',target:'gpu'},{source:'gpu-var',target:'fabric'},{source:'gpu-var',target:'dist'},{source:'gpu-var',target:'acmbcb'},
+        {source:'variantkg',target:'kg'},{source:'variantkg',target:'spark'},{source:'variantkg',target:'dist'},{source:'variantkg',target:'frontiers'},{source:'variantkg',target:'bigdata'},
+        {source:'cikm',target:'dist'},{source:'cikm',target:'spark'},{source:'cikm',target:'fabric'},{source:'cikm',target:'acmcikm'},{source:'cikm',target:'bigdata'},
+        {source:'etgwas',target:'genomics'},{source:'etgwas',target:'mldl'},
+        {source:'g2pdeep',target:'mldl'},{source:'g2pdeep',target:'tf'},
+        {source:'deepmap',target:'mldl'},{source:'deepmap',target:'genomics'}
+      ];
+
+      const colors = {paper:'#149ddd',topic:'#f7a737',tool:'#18d26e',venue:'#9b59b6'};
+      const radii = {paper:14,topic:10,tool:10,venue:10};
+
+      const container = document.getElementById('kg-container');
+      const w = container ? container.offsetWidth : 800;
+      const h = 480;
+
+      const svg = d3.select('#kg-svg').attr('width', w).attr('height', h);
+      const g = svg.append('g');
+
+      const zoom = d3.zoom().scaleExtent([0.4,3]).on('zoom', e => g.attr('transform', e.transform));
+      svg.call(zoom);
+
+      const sim = d3.forceSimulation(nodes)
+        .force('link', d3.forceLink(links).id(d => d.id).distance(80))
+        .force('charge', d3.forceManyBody().strength(-300))
+        .force('center', d3.forceCenter(w/2, h/2))
+        .force('collision', d3.forceCollide().radius(d => radii[d.type] + 15));
+
+      const link = g.append('g').selectAll('line').data(links).join('line')
+        .attr('stroke', '#ccc').attr('stroke-width', 1.2).attr('stroke-opacity', 0.6);
+
+      const node = g.append('g').selectAll('g').data(nodes).join('g')
+        .call(d3.drag()
+          .on('start', (e,d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; })
+          .on('drag', (e,d) => { d.fx=e.x; d.fy=e.y; })
+          .on('end', (e,d) => { if (!e.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }));
+
+      node.append('circle')
+        .attr('r', d => radii[d.type])
+        .attr('fill', d => colors[d.type])
+        .attr('stroke', '#fff').attr('stroke-width', 2);
+
+      node.append('text')
+        .attr('dy', d => radii[d.type] + 14)
+        .attr('text-anchor', 'middle')
+        .attr('font-size', 10)
+        .attr('font-family', "'Open Sans', sans-serif")
+        .attr('fill', () => document.body.classList.contains('dark-mode') ? '#c9d1d9' : '#444')
+        .text(d => d.label);
+
+      const tooltip = document.getElementById('kg-tooltip');
+      node.on('mouseenter', function(e, d) {
+        if (tooltip) {
+          tooltip.innerHTML = `<strong>${d.label}</strong><br><span style="text-transform:capitalize">${d.type}</span>`;
+          tooltip.style.display = 'block';
+        }
+      }).on('mousemove', function(e) {
+        if (tooltip) {
+          const rect = container.getBoundingClientRect();
+          tooltip.style.left = (e.clientX - rect.left + 12) + 'px';
+          tooltip.style.top  = (e.clientY - rect.top - 10) + 'px';
+        }
+      }).on('mouseleave', function() {
+        if (tooltip) tooltip.style.display = 'none';
+      });
+
+      sim.on('tick', () => {
+        link.attr('x1',d=>d.source.x).attr('y1',d=>d.source.y).attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);
+        node.attr('transform', d => `translate(${d.x},${d.y})`);
+      });
+
+      // Update label color on dark mode toggle
+      const dmBtn = document.getElementById('darkModeToggle');
+      if (dmBtn) {
+        dmBtn.addEventListener('click', function() {
+          setTimeout(() => {
+            const isDark = document.body.classList.contains('dark-mode');
+            g.selectAll('text').attr('fill', isDark ? '#c9d1d9' : '#444');
+            link.attr('stroke', isDark ? '#444' : '#ccc');
+          }, 50);
+        });
+      }
     });
   </script>
 </body>
