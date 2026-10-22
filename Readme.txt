@@ -1,1 +1,0 @@
-Thankyou for seeing my portfolio.

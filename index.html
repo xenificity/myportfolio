@@ -1,1706 +1,730 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ajay Kumar — Ph.D. candidate in computer science, Siemens AI research intern</title>
+<meta name="description" content="Ajay Kumar makes large scientific workloads run faster on clusters and builds evaluation systems for LLM pipelines. Ph.D. candidate at the University of Missouri, research intern at Siemens Technology.">
+<link rel="canonical" href="https://ajay-kumar.com/">
+<meta name="theme-color" content="#f3f2ed" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1113" media="(prefers-color-scheme: dark)">
 
-  <title>Ajay Kumar's Portfolio</title>
-  <meta content="Ajay Kumar - Ph.D. Computer Science researcher at University of Missouri specializing in AI, Machine Learning, and Distributed Computing on the FABRIC testbed." name="description">
-  <meta content="Ajay Kumar, PhD, Computer Science, Machine Learning, AI, Generative AI, Data Science, University of Missouri, FABRIC, distributed computing" name="keywords">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ajay Kumar — Ph.D. candidate, AI systems researcher">
+<meta property="og:description" content="Distributed systems × genomics × LLM evaluation. Siemens research intern, University of Missouri Ph.D. candidate, 7 peer-reviewed papers.">
+<meta property="og:url" content="https://ajay-kumar.com/">
+<meta property="og:image" content="https://ajay-kumar.com/assets/img/profile-img.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@xenificity">
+<meta name="twitter:title" content="Ajay Kumar — Ph.D. candidate, AI systems researcher">
+<meta name="twitter:description" content="Distributed systems × genomics × LLM evaluation. Siemens research intern, University of Missouri Ph.D. candidate.">
+<meta name="twitter:image" content="https://ajay-kumar.com/assets/img/profile-img.jpg">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="assets/css/site.css?v=2026-10-22">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Leaflet Map -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
-  <!-- Chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-
-  <!-- D3.js -->
-  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ajay Kumar",
+  "url": "https://ajay-kumar.com/",
+  "image": "https://ajay-kumar.com/assets/img/profile-img.jpg",
+  "jobTitle": "Ph.D. Candidate in Computer Science",
+  "affiliation": [
+    {"@type": "Organization", "name": "University of Missouri"},
+    {"@type": "Organization", "name": "Siemens Technology"}
+  ],
+  "alumniOf": [
+    {"@type": "CollegeOrUniversity", "name": "Banaras Hindu University"},
+    {"@type": "CollegeOrUniversity", "name": "University of Delhi"}
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/xenificity/",
+    "https://github.com/xenificity",
+    "https://scholar.google.com/citations?user=lVXFrj0AAAAJ",
+    "https://x.com/xenificity",
+    "https://www.youtube.com/@thescientificmonk2299"
+  ]
+}
+</script>
 </head>
-
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="dot" aria-hidden="true"></span>ajay-kumar.com</a>
+    <nav id="nav-links" class="nav-links" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn cv-link" href="assets/files/AjayKumar_CV.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M6 11l6 6 6-6M4 21h16"/></svg>CV
+      </a>
+      <button id="theme-btn" class="icon-btn theme-btn" type="button" aria-label="Toggle dark mode">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button id="nav-toggle" class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
 
-  <!-- Dark mode toggle -->
-  <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle dark mode">
-    <i class="bi bi-moon-fill" id="darkModeIcon"></i>
-  </button>
+<main id="top">
 
-  <!-- Download CV -->
-  <a href="assets/files/AjayKumar_CV.pdf" class="download-cv-btn" target="_blank" rel="noopener" title="View / Download CV">
-    <i class="bi bi-download"></i> Download CV
-  </a>
+<!-- ================= HERO ================= -->
+<section class="hero" aria-label="Introduction">
+  <div class="wrap">
+    <div class="terminal">
+      <div class="term-bar">
+        <i></i><i></i><i></i>
+        <span>ajay@portfolio: ~ — zsh</span>
+        <a class="skip" href="#about">skip to the page ↓</a>
+      </div>
+      <div id="term-body" class="term-body">
+        <div id="term-live">
+          <div class="t-input-row">
+            <span class="t-prompt">ajay@portfolio<b>:~$</b></span>
+            <label class="sr-only" for="term-input">Type a command</label>
+            <input id="term-input" class="t-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="go">
+          </div>
+          <div class="t-chips" aria-label="Quick commands">
+            <button type="button" data-cmd="help">help</button>
+            <button type="button" data-cmd="papers">papers</button>
+            <button type="button" data-cmd="projects">projects</button>
+            <button type="button" data-cmd="hire">hire</button>
+            <button type="button" data-cmd="contact">contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <span>Princeton, NJ · Columbia, MO</span>
+      <span>Open to Applied Scientist / ML Engineer roles from 2027 · <a href="#contact">say hello</a></span>
+    </div>
+  </div>
+</section>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>About</h2>
+      <p>Four years into a Ph.D. on making science run faster, and a summer spent learning how LLM agents fail.</p>
+    </div>
 
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Ajay Kumar</a></h1>
-        <div class="open-to-work"><span class="pulse-dot"></span> Open to Opportunities</div>
-        <div class="social-links mt-3 text-center">
-          <a href="https://www.linkedin.com/in/xenificity/" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://x.com/xenificity" class="twitter" title="X / Twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://github.com/xenificity" class="github" title="GitHub"><i class="bx bxl-github"></i></a>
-          <a href="https://scholar.google.com/citations?user=lVXFrj0AAAAJ&hl=en&authuser=2" class="google-plus" title="Google Scholar"><i class="bx bxs-graduation"></i></a>
-          <a href="https://sites.google.com/view/raopraveen/students" class="university" title="Research Lab"><i class="bx bx-globe"></i></a>
+    <div class="bento">
+      <div class="card span-7 reveal">
+        <span class="label">Who I am</span>
+        <p class="about-lede">I make large scientific workloads run faster and cheaper, and I build the checks that tell you when an AI system is wrong.</p>
+        <p class="about-body">I am a Ph.D. candidate in computer science at the University of Missouri, working with Dr. Praveen Rao in the Scalable Data Science Lab. My thesis is about optimizing scientific workflows, mostly genomics and neuroimaging pipelines, on NSF cyberinfrastructure such as FABRIC and CloudLab. In practice that means multi-GPU scheduling, Slurm clusters, knowledge graphs over billions of statements, and a lot of benchmarking.</p>
+        <p class="about-body">Since July 2026 I have been a research intern in Siemens' Foundational Technology AI group in Princeton, designing a validation framework for agentic LLM pipelines. Before the Ph.D. I spent two years in statistical genomics at the International Rice Research Institute, where I shipped DeepMap and trained more than a hundred scientists. On weekends I ship small iOS apps.</p>
+        <div class="chips">
+          <span>Ph.D. candidate, 4.0 GPA</span>
+          <span>Defending Dec 2026</span>
+          <span>Vice President, ACM UPE Mizzou</span>
         </div>
       </div>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#timeline" class="nav-link scrollto"><i class="bx bx-time-five"></i> <span>Journey</span></a></li>
-          <li><a href="#achievements" class="nav-link scrollto"><i class="bx bx-trophy"></i> <span>Achievements</span></a></li>
-          <li><a href="#publications" class="nav-link scrollto"><i class="bx bx-book-open"></i> <span>Publications</span></a></li>
-          <li><a href="#knowledge-graph" class="nav-link scrollto"><i class="bx bx-network-chart"></i> <span>Research Map</span></a></li>
-          <li><a href="#talks" class="nav-link scrollto"><i class="bx bx-microphone"></i> <span>Talks</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
-          <li><a href="#skills-programming" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Skills</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      <figure class="card photo-card span-5 reveal">
+        <img src="assets/img/Ajay.png" alt="Ajay Kumar speaking at a University of Missouri lectern" width="768" height="1376" loading="lazy">
+        <figcaption>Presenting at the University of Missouri</figcaption>
+      </figure>
+
+      <div class="card blue span-4 reveal">
+        <span class="label">Now</span>
+        <p class="now-text">Validating agentic LLM pipelines at Siemens. Two invention disclosures filed, one paper under review at CAIN 2027.</p>
+        <p class="now-foot">Thesis defense: December 2026</p>
+      </div>
+
+      <div class="card span-4 reveal">
+        <span class="label">By the numbers</span>
+        <div class="stats">
+          <div class="stat"><b>2×</b><span>throughput on GPU variant calling</span></div>
+          <div class="stat"><b>72<small>%</small></b><span>less energy per subject, neuroimaging</span></div>
+          <div class="stat"><b>7</b><span>peer-reviewed papers, 3 as first author</span></div>
+          <div class="stat"><b>100<small>+</small></b><span>scientists trained in ML and genomics</span></div>
+        </div>
+      </div>
+
+      <div class="card yellow span-4 reveal">
+        <span class="label">Recognition</span>
+        <ul class="awards-list">
+          <li><span>FABRIC Travel Fellowship</span><b>$5,500</b></li>
+          <li><span>ACM UPE Executive Council Award</span><b>$2,500</b></li>
+          <li><span>IEEE IISWC 2026 Travel Award</span><b>$1,500</b></li>
+          <li><span>Claude Builder Club Hackathon</span><b>1st place</b></li>
+          <li><span>Outstanding Teaching Assistant</span><b>Mizzou</b></li>
+          <li><span>Outstanding Ph.D. Student</span><b>Mizzou</b></li>
         </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div id="particles-js"></div>
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Ajay Kumar</h1>
-      <p>I'm <span class="typed" data-typed-items="a doctoral scholar,a computer researcher,VP of UPE-Mizzou,a hackathon winner,a Learner for life"></span></p>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p> Ajay Kumar is a passionate computer science lover. He is raised to play with computers whether they are video games or tons of coding. Academically, he is living his journey of being a novel computer scientist, currently a Ph.D. student (3rd year) in the Scalable Data Science (SDS) Lab at the University of Missouri, USA. </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Ph.D. Computer Science ( on the way ✈️ ) </h3>
-            <p class="fst-italic">
-              "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it."
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>22nd December 1997</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.ajay-kumar.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+1 573 801 5748</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Missouri, USA</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>28</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Doctorate</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ajay.kumar@missouri.edu</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
-            </div>
-            <p>
-              Training 10,000 hours to become a proficient coder with problem-solving skills in interdisciplinary areas. Trained 100+ scientists through conferences and workshops. Worked with 200+ researchers on diverse research problems at the Scalable Data Science (SDS) Lab under Dr. Praveen Rao.
-            </p>
-
-            <!-- GitHub Activity -->
-            <div class="github-activity-wrap mt-3">
-              <a href="https://github.com/xenificity" target="_blank">
-                <img src="https://ghchart.rshah.org/149ddd/xenificity" alt="Ajay Kumar GitHub contribution chart">
-              </a>
-            </div>
-
-            <!-- Currently Working On Card -->
-            <div class="currently-working-card mt-4" data-aos="fade-up">
-              <div class="cw-header"><i class="bi bi-activity"></i> Currently Working On</div>
-              <div class="cw-items">
-                <div class="cw-item"><span class="cw-icon">&#x1F52C;</span> <strong>PhD Thesis</strong> — Target: Dec 2026 · Distributed computing on FABRIC testbed</div>
-                <div class="cw-item"><span class="cw-icon">&#x1F4DD;</span> <strong>7+ papers published</strong> · ACM BCB, CIKM, Frontiers, Life Science Alliance</div>
-                <div class="cw-item"><span class="cw-icon">&#x1F4BC;</span> <strong>Seeking ML / DS / SWE roles</strong> — Open to full-time industry positions</div>
-                <div class="cw-item cw-github-activity"><span class="cw-icon"><i class="bi bi-github"></i></span> GitHub: <span id="gh-last-active">checking...</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </section><!-- End About Section -->
 
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Facts</h2>
-          <p>Discover the facts that shape our world. From the fascinating to the mind-boggling, from the fun to the serious, we delve into the details that make our universe so rich and diverse. Join us on this journey of knowledge and exploration, and you might just see the world in a whole new light.</p>
-          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+      <div class="card span-8 reveal">
+        <span class="label">Stack</span>
+        <div class="stack-group">
+          <span class="label">LLMs &amp; evaluation</span>
+          <div class="stack"><span>Fine-tuning</span><span>RAG</span><span>Agentic pipelines</span><span>Evaluation harnesses</span><span>Uncertainty &amp; abstention</span><span>Hugging Face</span><span>Claude API</span></div>
         </div>
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="8415" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Lines of code </strong> </p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> </p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="2148" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Lectures attended </strong> </p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="count-box">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="242" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>People worked with</strong> </p>
-            </div>
-          </div>
-
+        <div class="stack-group">
+          <span class="label">ML &amp; data</span>
+          <div class="stack"><span>PyTorch</span><span>TensorFlow / Keras</span><span>scikit-learn</span><span>Graph ML</span><span>Apache Spark</span><span>RDF / SPARQL</span><span>Pandas</span><span>R</span><span>SQL</span></div>
         </div>
-
-      </div>
-    </section><!-- End Facts Section -->
-
-    <!-- ======= Programming Languages Section ======= -->
-    <section id="skills-programming" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Programming Languages</h2>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">Python <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">R <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">SQL <i class="val">88%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Bash <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Programming Languages Section -->
-
-    <!-- ======= AI/ML & Generative AI Section ======= -->
-    <section id="skills-ml" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>AI / ML &amp; Generative AI</h2>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">TensorFlow <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">PyTorch <i class="val">92%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Scikit-learn <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">LLMs &amp; Generative AI <i class="val">92%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">AI Agents &amp; Multi-Agents <i class="val">88%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Keras / HuggingFace <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End AI/ML Section -->
-
-    <!-- ======= Big Data, Cloud & Data Tools Section ======= -->
-    <section id="skills-bigdata" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Big Data, Cloud &amp; Data Analysis</h2>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">Apache Spark <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Apache Hadoop / Hive <i class="val">88%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">AWS SageMaker <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">Data Analysis (Pandas / NumPy / SciPy) <i class="val">92%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Data Visualization (Matplotlib / Seaborn) <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Web Development (Django / Flask / HTML / JS) <i class="val">83%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Big Data Section -->
-
-    <!-- ======= Skills Radar Section ======= -->
-    <section id="skills-radar" class="skills-radar skills section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Skill Overview</h2>
-        </div>
-        <div class="row align-items-center" data-aos="fade-up">
-          <div class="col-lg-6 d-flex justify-content-center">
-            <div class="radar-chart-wrap">
-              <canvas id="skillsRadar" width="380" height="380"></canvas>
-            </div>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
-            <h3 class="radar-desc-title">Research &amp; Technical Expertise</h3>
-            <p class="radar-desc">From large-scale distributed computing and GPU-accelerated genomic pipelines to LLM-powered agents and deep learning models — Ajay's skill set spans the full data science stack. With a 4.0 GPA PhD and hands-on experience across academia and industry, he brings both depth and breadth to every problem.</p>
-            <ul class="radar-skill-list">
-              <li><i class="bi bi-check-circle-fill"></i> Machine Learning &amp; Deep Learning (TensorFlow, PyTorch)</li>
-              <li><i class="bi bi-check-circle-fill"></i> Generative AI &amp; LLMs (Agents, RAG, Fine-tuning)</li>
-              <li><i class="bi bi-check-circle-fill"></i> Big Data &amp; Cloud (Spark, Hadoop, AWS, FABRIC)</li>
-              <li><i class="bi bi-check-circle-fill"></i> Bioinformatics &amp; Genomics (GWAS, Variant Calling)</li>
-              <li><i class="bi bi-check-circle-fill"></i> Research &amp; Scientific Writing (7+ publications)</li>
-            </ul>
-          </div>
+        <div class="stack-group">
+          <span class="label">Systems</span>
+          <div class="stack"><span>Multi-GPU training &amp; inference</span><span>NVIDIA Parabricks</span><span>Slurm</span><span>Nextflow</span><span>Docker</span><span>Kubernetes</span><span>FABRIC</span><span>CloudLab</span><span>AWS</span><span>Azure</span><span>GCP</span><span>SwiftUI</span></div>
         </div>
       </div>
-    </section><!-- End Skills Radar Section -->
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Curriculum Vitae</h2>
-          <p>Latest resume available on request. ➡️ </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>Ajay Kumar</h4>
-              <p><em>Ph.D. Candidate in Computer Science (graduating Dec 2026) · Graduate Research Assistant at the Scalable Data Science (SDS) Lab · Vice President, ACM Upsilon Pi Epsilon (UPE) at Mizzou. Actively seeking Software Engineering, Data Scientist, and Machine Learning Engineer roles in industry.
-                </em></p>
-              <ul>
-                <li>Columbia, MO, USA</li>
-                <li>+1 573 801 5748</li>
-                <li>ajay.ducs@gmail.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Doctor of Philosophy (Ph.D.), Computer Science</h4>
-              <h5>Aug 2022 - Dec 2026</h5>
-              <p><em>University of Missouri-Columbia, MO, USA</em></p>
-              <p><strong>GPA: 4.0/4.0</strong></p>
-              <p><strong>Thesis:</strong> Optimized scientific workflows on the FABRIC national research testbed, advancing large-scale distributed computing capabilities.<br>
-              <strong>Thesis Advisor:</strong> Dr. Praveen Rao</p>
-            </div>
-            <div class="resume-item">
-              <h4>Master of Science, Computer Science</h4>
-              <h5>2018 - 2020</h5>
-              <p><em>Banaras Hindu University (BHU), India</em></p>
-              <p>Grade: 8.23/10 · Research-oriented program covering AI, deep learning, data science, and computational theory. Thesis supervised by Dr. Manoj Kumar Singh (GIST, South Korea).</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Science, Computer Science</h4>
-              <h5>2015 - 2018</h5>
-              <p><em>University of Delhi, India</em></p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Graduate Research Assistant (GRA) · SDS Lab, University of Missouri</h4>
-              <h5>Aug 2022 - Present</h5>
-              <p><em>Columbia, MO, USA</em></p>
-              <ul>
-                <li>First-author paper on GPU-enabled variant calling (2× speedup) — ACM BCB 2025.</li>
-                <li>First-author paper on <em>BrainScale</em>: FreeSurfer parallelism optimization on FABRIC — submitted to INDIS Workshop, Supercomputing 2025.</li>
-                <li>Scalable 650GB genomic variant analysis using Knowledge Graphs on NSF-funded FABRIC/CloudLab infrastructure.</li>
-                <li>Established AWS × IRRI partnership boosting genomic computational resources by 50%.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Graduate Teaching Assistant (GTA) · University of Missouri</h4>
-              <h5>Jan 2025 - May 2026</h5>
-              <p><em>Columbia, MO, USA</em></p>
-              <ul>
-                <li><strong>CS 4080</strong> — Parallel Programming for High Performance Computing (HPC)</li>
-                <li><strong>CS 3910</strong> — Advanced Cybersecurity</li>
-                <li><strong>CMP_SC 1300</strong> — Computing with Data in Python</li>
-                <li><strong>CS/ECE 4001</strong> — Integrated Cyberinfrastructure &amp; Biomedical Engineering</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Project Associate-I (Statistical Genomics) IRRI South Asia Hub</h4>
-              <h5>2020 - 2022</h5>
-              <p><em>South Asia Hub, IN</em></p>
-              <ul>
-                <li>Led in the establishment of a partnership of Amazon Web Services (AWS) and the International Rice Research Institute (IRRI) South Asia Hub (ISAH) and South Asia Regional Center (ISARC).</li>
-                <li>Trained 100+ Indian scientists/professors on "R programming, GWAS, QTLSeqR, GenomicSelection, and PythonAutomation".</li>
-                <li>Performed statistical, exploratory, and predictive analysis/modeling using machine/deep learning, four research papers are in the manuscript (also 150K+ views on Quora answers).</li>
-                <li>Conducted collaborated research with plant breeders, pathologists, molecular biologists, and bioinformaticians to solve domain-specific problems using machine/deep learning, performed data science analytics, and also, wet hands with computational biology skills. </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Research Timeline Section ======= -->
-    <section id="timeline" class="timeline section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Research Journey</h2>
-          <p>Key milestones from my academic and professional career.</p>
-        </div>
-        <div class="timeline-wrap">
-
-          <div class="timeline-item timeline-left" data-aos="fade-right">
-            <div class="timeline-year-badge">Jun 2019</div>
-            <div class="timeline-card">
-              <h4>Software Engineer Intern · SPA, New Delhi</h4>
-              <p>Built govt urban planning site (15K visitors) &amp; biodiversity Android app</p>
-            </div>
-          </div>
-
-          <div class="timeline-item timeline-right" data-aos="fade-left">
-            <div class="timeline-year-badge">Aug 2020</div>
-            <div class="timeline-card">
-              <h4>Research Scientist · IRRI South Asia Hub, India</h4>
-              <p>Led AWS-IRRI partnership, trained 100+ scientists, 4 research papers, 200K+ Quora views</p>
-            </div>
-          </div>
-
-          <div class="timeline-item timeline-left" data-aos="fade-right">
-            <div class="timeline-year-badge">Aug 2022</div>
-            <div class="timeline-card">
-              <h4>PhD Student · University of Missouri, USA</h4>
-              <p>Started at SDS Lab under Dr. Praveen Rao. FABRIC, GPU computing, Knowledge Graphs</p>
-            </div>
-          </div>
-
-          <div class="timeline-item timeline-right" data-aos="fade-left">
-            <div class="timeline-year-badge">2023</div>
-            <div class="timeline-card">
-              <h4>First Major Paper · VariantKG</h4>
-              <p>Scalable genomic variant analysis on 650GB dataset using Knowledge Graphs &amp; Graph ML</p>
-            </div>
-          </div>
-
-          <div class="timeline-item timeline-left" data-aos="fade-right">
-            <div class="timeline-year-badge">2024</div>
-            <div class="timeline-card">
-              <h4>Awards &amp; Recognition</h4>
-              <p>$2,500 ACM UPE Award · $5,500 FABRIC Fellowship · CIKM Demo presentation · Et-GWAS published (8 citations)</p>
-            </div>
-          </div>
-
-          <div class="timeline-item timeline-right" data-aos="fade-left">
-            <div class="timeline-year-badge">2025</div>
-            <div class="timeline-card">
-              <h4>Research &amp; Recognition</h4>
-              <p>ACM BCB paper (2× GPU speedup) · BrainScale submitted to SC'25 · 🏆 1st Place Claude Builder Club Hackathon · Outstanding TA Award · VP, UPE-Mizzou</p>
-            </div>
-          </div>
-
-          <div class="timeline-item timeline-left timeline-final" data-aos="fade-right">
-            <div class="timeline-year-badge timeline-badge-gold"><i class="bi bi-mortarboard-fill"></i> Dec 2026</div>
-            <div class="timeline-card timeline-card-gold">
-              <h4>PhD Graduation (Expected)</h4>
-              <p>Thesis: Optimized scientific workflows on FABRIC national research testbed</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section><!-- End Timeline Section -->
-
-    <!-- ======= Key Achievements Section ======= -->
-    <section id="achievements" class="achievements section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Key Achievements</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-trophy"></i></div>
-            <h4 class="title">$2,500 ACM UPE Executive Council Award</h4>
-            <p class="description">Honored for leading international chapter operations as Vice President, recognized by the ACM Upsilon Pi Epsilon honor society for outstanding contributions.</p>
-          </div>
-
-          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-send"></i></div>
-            <h4 class="title">$5,500 FABRIC Competitive Travel Fellowship</h4>
-            <p class="description">Secured a competitive travel fellowship from FABRIC to present research findings and build global collaborations at prestigious international venues.</p>
-          </div>
-
-          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-people"></i></div>
-            <h4 class="title">8,000+ Member Technical Community</h4>
-            <p class="description">Grew and actively manage a high-engagement technical community driving industry-relevant discussions and knowledge sharing through <a href="https://www.linkedin.com/in/xenificity/" target="_blank">LinkedIn</a>, <a href="https://github.com/xenificity" target="_blank">GitHub</a>, and <a href="https://www.youtube.com/@thescientificmonk2299" target="_blank">YouTube</a>.</p>
-          </div>
-
-          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="bi bi-journal-bookmark-fill"></i></div>
-            <h4 class="title">7+ Published Research Papers</h4>
-            <p class="description">Published/co-published in prestigious international venues, contributing to advancements in computing, distributed cloud computing, and artificial intelligence. <a href="https://scholar.google.com/citations?user=lVXFrj0AAAAJ&hl=en&authuser=2" target="_blank">View on Google Scholar</a>.</p>
-          </div>
-
-          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="bi bi-trophy-fill"></i></div>
-            <h4 class="title">🏆 1st Place — Claude Builder Club Hackathon</h4>
-            <p class="description">Won first place at the Mizzou Claude Builder Club Hackathon with <em>Equine Lameness Predictor</em> — an AI-powered diagnostic tool for detecting horse lameness using Claude and computer vision.</p>
-          </div>
-
-          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="bi bi-person-check-fill"></i></div>
-            <h4 class="title">Outstanding Teaching Assistant Award</h4>
-            <p class="description">Recognized with the Outstanding Teaching Assistant Award at University of Missouri-Columbia for excellence in teaching Parallel Programming (HPC), Cybersecurity, and Python courses.</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Key Achievements Section -->
-
-
-    <!-- ======= Publications Section ======= -->
-    <section id="publications" class="publications">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Publications</h2>
-          <p>Research contributions in distributed computing, genomics, machine learning, and AI. <a href="https://scholar.google.com/citations?user=lVXFrj0AAAAJ&hl=en&authuser=2" target="_blank">Full list on Google Scholar &rarr;</a></p>
-        </div>
-
-        <!-- Research Metrics -->
-        <div class="metrics-strip" data-aos="fade-up">
-          <div class="metric-box">
-            <span class="metric-number">16</span>
-            <span class="metric-label">Citations</span>
-            <span class="metric-src">Google Scholar</span>
-          </div>
-          <div class="metric-box">
-            <span class="metric-number">2</span>
-            <span class="metric-label">h-index</span>
-            <span class="metric-src">Google Scholar</span>
-          </div>
-          <div class="metric-box">
-            <span class="metric-number">7+</span>
-            <span class="metric-label">Papers</span>
-            <span class="metric-src">Int'l Venues</span>
-          </div>
-          <div class="metric-box">
-            <span class="metric-number">2</span>
-            <span class="metric-label">Conferences</span>
-            <span class="metric-src">ACM BCB &amp; CIKM</span>
-          </div>
-        </div>
-
-        <!-- Filter -->
-        <div class="pub-filter mt-4" data-aos="fade-up">
-          <button class="pub-filter-btn active" data-filter="all">All</button>
-          <button class="pub-filter-btn" data-filter="journal">Journal</button>
-          <button class="pub-filter-btn" data-filter="conference">Conference</button>
-          <button class="pub-filter-btn" data-filter="preprint">Preprint</button>
-        </div>
-
-        <!-- Publications List -->
-        <div id="pub-list" data-aos="fade-up">
-
-          <div class="pub-item" data-type="journal">
-            <div class="pub-year">2025</div>
-            <div class="pub-content">
-              <div class="pub-title"><a href="https://www.frontiersin.org/journals/big-data/articles/10.3389/fdata.2024.1466391/full" target="_blank">A Scalable Tool for Analyzing Genomic Variants of Humans Using Knowledge Graphs and Graph Machine Learning</a></div>
-              <div class="pub-authors">S. Prasanna, <strong>A. Kumar</strong>, D. Rao, E.J. Simoes, P. Rao</div>
-              <div class="pub-venue">Frontiers in Big Data, 2025</div>
-              <div class="pub-badges">
-                <span class="pub-badge b-journal">Journal</span>
-                <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 1 citation</span>
-              </div>
-              <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
-              <div class="pub-abstract">A scalable tool for analyzing 650GB of human genomic variants using Knowledge Graphs and Graph Machine Learning on NSF-funded FABRIC and CloudLab distributed infrastructure.</div>
-            </div>
-          </div>
-
-          <div class="pub-item" data-type="conference">
-            <div class="pub-year">2025</div>
-            <div class="pub-content">
-              <div class="pub-title"><a href="https://dl.acm.org/doi/abs/10.1145/3768322.3769016" target="_blank">Optimizing the Variant Calling Pipeline Execution on Human Genomes Using GPU-Enabled Machines</a></div>
-              <div class="pub-authors"><strong>A. Kumar</strong>, P. Rao, P. Sanders</div>
-              <div class="pub-venue">16th ACM Conference on Bioinformatics, Computational Biology and Health Informatics (ACM BCB), 2025</div>
-              <div class="pub-badges">
-                <span class="pub-badge b-conference">Conference</span>
-              </div>
-              <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
-              <div class="pub-abstract">Optimizes a scalable distributed multi-GPU pipeline achieving 2× speedup for COVID-19 human genome variant calling on FABRIC/CloudLab using Google's JobShop Scheduling with NVIDIA Parabricks.</div>
-            </div>
-          </div>
-
-          <div class="pub-item" data-type="conference">
-            <div class="pub-year">2025</div>
-            <div class="pub-content">
-              <div class="pub-title">BrainScale: Utilizing FABRIC for FreeSurfer Optimization and Choosing the Right Level of Parallelism</div>
-              <div class="pub-authors"><strong>A. Kumar</strong>, P. Rao</div>
-              <div class="pub-venue">INDIS Workshop, SC'25 (Supercomputing 2025) — <em>Under Review</em></div>
-              <div class="pub-badges">
-                <span class="pub-badge b-conference">Workshop</span>
-                <span class="pub-badge" style="background:#6f42c1;color:#fff;border-radius:4px;padding:2px 8px;font-size:11px;">Under Review</span>
-              </div>
-              <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
-              <div class="pub-abstract">BrainScale leverages the FABRIC national research testbed to optimize FreeSurfer neuroimaging workflows, systematically benchmarking parallelism strategies across distributed HPC resources to maximize throughput for large-scale brain imaging studies.</div>
-            </div>
-          </div>
-
-          <div class="pub-item" data-type="journal">
-            <div class="pub-year">2024</div>
-            <div class="pub-content">
-              <div class="pub-title"><a href="https://www.life-science-alliance.org/content/7/3/e202302352" target="_blank">Extreme Trait GWAS (Et-GWAS): Unraveling Rare Variants in the 3,000 Rice Genome</a></div>
-              <div class="pub-authors">N. Gnanapragasam, V.V. Prasanth, K.T. Sundaram, <strong>A. Kumar</strong>, B. Pahi, et al.</div>
-              <div class="pub-venue">Life Science Alliance, 2024</div>
-              <div class="pub-badges">
-                <span class="pub-badge b-journal">Journal</span>
-                <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 8 citations</span>
-              </div>
-              <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
-              <div class="pub-abstract">Novel extreme-trait GWAS methodology for uncovering rare variants across 3,000 rice genomes, enabling precision genomic selection for crop improvement.</div>
-            </div>
-          </div>
-
-          <div class="pub-item" data-type="conference">
-            <div class="pub-year">2024</div>
-            <div class="pub-content">
-              <div class="pub-title"><a href="https://dl.acm.org/doi/abs/10.1145/3627673.3679221" target="_blank">A Scalable Tool for Democratizing Variant Calling on Human Genomes Using Commodity Clusters</a></div>
-              <div class="pub-authors">K. Shehzad, <strong>A. Kumar</strong>, M. Schutz, C. Webb, P. Nalela, M.J. Das, P. Rao</div>
-              <div class="pub-venue">33rd ACM International Conference on Information and Knowledge Management (CIKM), Demo Track, 2024</div>
-              <div class="pub-badges">
-                <span class="pub-badge b-conference">Conference</span>
-                <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 1 citation</span>
-              </div>
-              <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
-              <div class="pub-abstract">Democratizes human genome variant calling by enabling scalable analysis on commodity clusters using Apache Spark, Hadoop, and multi-cloud environments (FABRIC, CloudLab, AWS).</div>
-            </div>
-          </div>
-
-          <div class="pub-item" data-type="preprint">
-            <div class="pub-year">2024</div>
-            <div class="pub-content">
-              <div class="pub-title"><a href="https://arxiv.org/abs/2407.20879" target="_blank">A Scalable Tool For Analyzing Genomic Variants Of Humans Using Knowledge Graphs and Machine Learning</a></div>
-              <div class="pub-authors">S. Prasanna, <strong>A. Kumar</strong>, D. Rao, E. Simoes, P. Rao</div>
-              <div class="pub-venue">arXiv preprint arXiv:2407.20879, 2024 &nbsp;&bull;&nbsp; <em>Preprint of Frontiers in Big Data (2025)</em></div>
-              <div class="pub-badges">
-                <span class="pub-badge b-preprint">Preprint</span>
-                <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 2 citations</span>
-              </div>
-              <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
-              <div class="pub-abstract">Scalable analysis of 650GB of human genomic variants using Knowledge Graphs and Graph Machine Learning on NSF-funded FABRIC and CloudLab distributed infrastructure. Preprint of the published Frontiers in Big Data article.</div>
-            </div>
-          </div>
-
-          <div class="pub-item" data-type="preprint">
-            <div class="pub-year">2024</div>
-            <div class="pub-content">
-              <div class="pub-title"><a href="https://www.biorxiv.org/content/10.1101/2024.09.10.612292v1" target="_blank">G2PDeep-v2: A Web-Based Deep-Learning Framework for Phenotype Prediction and Biomarker Discovery Using Multi-Omics Data</a></div>
-              <div class="pub-authors">S. Zeng, T. Adusumilli, S.Z. Awan, M.S. Immadi, D. Xu, T. Joshi</div>
-              <div class="pub-venue">bioRxiv, 2024 &nbsp;&bull;&nbsp; <a href="https://g2pdeep.org/" target="_blank">g2pdeep.org</a></div>
-              <div class="pub-badges">
-                <span class="pub-badge b-preprint">Preprint</span>
-                <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 3 citations</span>
-              </div>
-              <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
-              <div class="pub-abstract">Web-based deep learning framework for multi-omics phenotype prediction and biomarker discovery, supporting plant breeders with an accessible web interface at g2pdeep.org.</div>
-            </div>
-          </div>
-
-          <div class="pub-item" data-type="preprint">
-            <div class="pub-year">2023</div>
-            <div class="pub-content">
-              <div class="pub-title"><a href="https://www.biorxiv.org/content/10.1101/2023.07.26.550275v1" target="_blank">DeepMap: A Deep Learning-Based Model with a Four-Line Code for Prediction-Based Breeding in Crops</a></div>
-              <div class="pub-authors"><strong>A. Kumar</strong>, K.T. Sundaram, N. Gnanapragasam, U.M. Singh, K.J. Pranesh, et al.</div>
-              <div class="pub-venue">bioRxiv, 2023 &nbsp;&bull;&nbsp; <a href="https://test.pypi.org/project/DeepMap-1.0/" target="_blank">PyPI: DeepMap</a></div>
-              <div class="pub-badges">
-                <span class="pub-badge b-preprint">Preprint</span>
-                <span class="pub-badge b-cited"><i class="bi bi-quote"></i> 1 citation</span>
-              </div>
-              <button class="abstract-toggle"><i class="bi bi-chevron-down"></i> Abstract</button>
-              <div class="pub-abstract">Deep learning model for prediction-based crop breeding that outperforms traditional ML by 13–20%, deployable with a four-line Python interface via PyPI.</div>
-            </div>
-          </div>
-
-
-
-        </div><!-- End pub-list -->
-      </div>
-    </section><!-- End Publications Section -->
-
-    <!-- ======= Research Knowledge Graph Section ======= -->
-    <section id="knowledge-graph" class="knowledge-graph section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Research Knowledge Graph</h2>
-          <p>Explore connections between papers, tools, topics and venues — click and drag nodes</p>
-        </div>
-        <div data-aos="fade-up">
-          <div id="kg-container">
-            <svg id="kg-svg"></svg>
-            <div id="kg-tooltip" class="kg-tooltip"></div>
-          </div>
-          <div class="kg-legend">
-            <span class="kg-legend-item"><span class="kg-dot" style="background:#149ddd"></span> Paper</span>
-            <span class="kg-legend-item"><span class="kg-dot" style="background:#f7a737"></span> Topic</span>
-            <span class="kg-legend-item"><span class="kg-dot" style="background:#18d26e"></span> Tool</span>
-            <span class="kg-legend-item"><span class="kg-dot" style="background:#9b59b6"></span> Venue</span>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Knowledge Graph Section -->
-
-    <!-- ======= Talks & Conferences Section ======= -->
-    <section id="talks" class="talks section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Talks &amp; Conferences</h2>
-          <p>Presentations and demos at international research venues.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-7">
-
-            <div class="talk-item" data-aos="fade-up">
-              <div class="talk-year-badge">2025<br><small>Talk</small></div>
-              <div class="talk-content">
-                <h5>Optimizing the Variant Calling Pipeline Execution on Human Genomes Using GPU-Enabled Machines</h5>
-                <div class="talk-venue">16th ACM BCB — ACM Conference on Bioinformatics, Computational Biology and Health Informatics</div>
-                <div class="talk-location"><i class="bi bi-geo-alt-fill"></i> USA, 2025</div>
-                <span class="talk-type-badge conf">Conference Talk</span>
-                <a href="https://dl.acm.org/doi/abs/10.1145/3768322.3769016" target="_blank" class="pub-badge b-journal ms-2" style="text-decoration:none;">Paper &rarr;</a>
-              </div>
-            </div>
-
-            <div class="talk-item" data-aos="fade-up" data-aos-delay="100">
-              <div class="talk-year-badge">2024<br><small>Demo</small></div>
-              <div class="talk-content">
-                <h5>A Scalable Tool for Democratizing Variant Calling on Human Genomes Using Commodity Clusters</h5>
-                <div class="talk-venue">33rd ACM CIKM — International Conference on Information and Knowledge Management</div>
-                <div class="talk-location"><i class="bi bi-geo-alt-fill"></i> Boise, ID, USA — October 2024</div>
-                <span class="talk-type-badge demo">Demo Presentation</span>
-                <a href="https://dl.acm.org/doi/abs/10.1145/3627673.3679221" target="_blank" class="pub-badge b-journal ms-2" style="text-decoration:none;">Paper &rarr;</a>
-              </div>
-            </div>
-
-            <div class="talk-item" data-aos="fade-up" data-aos-delay="200">
-              <div class="talk-year-badge">2021<br><small>Training</small></div>
-              <div class="talk-content">
-                <h5>R Programming, GWAS, QTLSeqR, Genomic Selection &amp; Python Automation for Researchers</h5>
-                <div class="talk-venue">International Training Workshop — IRRI South Asia Hub</div>
-                <div class="talk-location"><i class="bi bi-geo-alt-fill"></i> India, 2021 &nbsp;&bull;&nbsp; 100+ scientists trained</div>
-                <span class="talk-type-badge invited">Invited Workshop</span>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-5" data-aos="fade-left">
-            <div id="talk-map"></div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Talks Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>As a dedicated researcher in the fields of Artificial Intelligence, Machine Learning, and Computational Biology, I have consistently demonstrated my ability to drive innovation and contribute to cutting-edge projects. </p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Machine Learning Projects</li>
-              <li data-filter=".filter-card">Optimization Projects</li>
-              <li data-filter=".filter-web">Hackathon Projects</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/G2PDeep.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/G2PDeep.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/deepmap.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/deepmap.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/gpuvariantcalling.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/gpuvariantcalling.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/gpugaf.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/gpugaf.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/variantKG.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/variantKG.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/variantKG.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/variantKG.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/urbanstep.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/urbanstep.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/gesture.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/gesture.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/automation.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/automation.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>Ajay Kumar offers a comprehensive suite of AI and data-driven services, leveraging his expertise in cutting-edge technologies. His services span generative AI, machine learning, optimization, research, development, and data analysis. Ajay specializes in developing innovative AI models, designing efficient algorithms, and implementing scalable solutions across various domains. His interdisciplinary approach combines AI with computational biology and other fields, driving innovation and scientific discovery. Clients benefit from his full-stack development skills, data science consulting, and ability to deliver actionable insights. Known for his collaborative spirit and commitment to excellence, Ajay not only provides technical solutions but also offers training and mentorship to enhance team capabilities. His rare combination of theoretical knowledge and practical skills makes him an invaluable asset for organizations seeking to leverage AI and data-driven technologies for competitive advantage.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">Generative AI</a></h4>
-            <p class="description">I specialize in developing cutting-edge generative AI models, including text-to-image, language models, and creative AI applications. My services cover model design, training, fine-tuning, and deployment, ensuring innovative solutions that push the boundaries of AI-generated content across various domains.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="">Machine Learning</a></h4>
-            <p class="description">I offer machine learning services, including algorithm design, predictive modeling, and deep learning solutions tailored to specific business needs. My expertise includes data science consulting, model deployment, and custom software development. I also provide training and mentorship to enhance team skills in machine learning applications.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-bar-chart"></i></div>
-            <h4 class="title"><a href="">Optimization</a></h4>
-            <p class="description">I excel in optimization techniques for various domains, including algorithm efficiency, resource allocation, and process improvement. My services encompass mathematical modeling, heuristic methods, and machine learning-based optimization, delivering solutions that maximize performance and minimize costs across complex systems.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="bi bi-binoculars"></i></div>
-            <h4 class="title"><a href="">Research</a></h4>
-            <p class="description">I conduct cutting-edge research in AI, ML, and computational biology. My services include literature reviews, experimental design, data analysis, and publication support. I specialize in interdisciplinary projects, combining expertise in AI with domain-specific knowledge to drive innovation and scientific discovery.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="bi bi-brightness-high"></i></div>
-            <h4 class="title"><a href="">Development</a></h4>
-            <p class="description">I offer full-stack development services with a focus on AI-driven applications. My expertise covers front-end and back-end development, database design, API integration, and cloud deployment. I specialize in creating scalable, efficient software solutions that leverage the latest technologies.
-            </p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-            <h4 class="title"><a href="">Data Analysis</a></h4>
-            <p class="description">I provide comprehensive data analysis services, including data cleaning, exploratory data analysis, statistical modeling, and data visualization. My expertise covers big data technologies, predictive analytics, and business intelligence, delivering actionable insights to drive informed decision-making.</p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>Ajay Kumar is highly regarded for his exceptional skills and contributions in artificial intelligence, machine learning, and computational biology, as reflected in numerous testimonials from colleagues and peers. Trinath Adusumilli commended Ajay's practical expertise and innovative algorithm design that significantly enhanced project performance, while Aarthi Desai highlighted his conscientiousness and dedication to producing quality work. Bandana Pahi praised his willingness to help others and his proficiency in computational programming, emphasizing his problem-solving abilities and creative thinking. Vamshi Venkat noted Ajay's unique approach to exploring new methods in AI, making him a valuable asset in research and technology. His strong work ethic, collaborative spirit, and commitment to excellence were consistently acknowledged by others, including Deepti Sagare-Shetti and Atul Joshi, who recognized his adaptability and drive for success. Overall, Ajay is portrayed as a knowledgeable and dedicated professional whose presence positively impacts any team he joins, making him an invaluable asset in the tech industry.</p>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Ajay Kumar excels in AI, ML, and DL, combining theoretical knowledge with practical skills. His innovative work on the G2PDeep application significantly improved AI system performance. Ajay's speed, accuracy, and clear communication make him invaluable. His collaborative spirit, mentoring commitment, and dedication position him as a rising force in AI. Any organization would be fortunate to have Ajay on their team.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/1712718090934.jpeg" class="testimonial-img" alt="">
-                <h3>Trinath Adusumilli</h3>
-                <h4>Full Stack Developer at Mastercard</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Ajay Kumar is an exceptional computational biologist and programmer with expertise in AI, ML, DL, and software development. His proficiency in developing accurate packages and software for biological data analysis is impressive. Ajay's dedication, problem-solving skills, and creative thinking make him a valuable team member. His willingness to help others and listen attentively is commendable. With his skills and positive attributes, Ajay will undoubtedly be a great asset to any team he joins.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/1722701510878.jpeg" class="testimonial-img" alt="">
-                <h3>Bandana Pahi</h3>
-                <h4>Bioinformatician at IRRI, South Asia Hub</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Ajay Kumar excels in Computational Biology and AI, demonstrating eminent expertise and a unique approach to exploring new methods. His proficiency in Machine Learning, Data Science, and Deep Learning is applied professionally in scientific contexts. Ajay's optimistic learning style and ability to apply his skills across various domains make him highly recommendable for positions in Research and Tech-Industry.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/1727193890285.jpeg" class="testimonial-img" alt="">
-                <h3>Vamshi Venkat</h3>
-                <h4>Research Associate/Data Scientist at Johns Hopskins University</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Having known Ajay since college and worked with him on various projects, I can attest to his hard work and commitment to excellence in researching new domains and applying ML/DL concepts. His collaborative nature and eagerness to learn make him a valuable team member. I am confident he will be a great asset to any organization he joins.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/1716005713327.jpeg" class="testimonial-img" alt="">
-                <h3>Atul Joshi</h3>
-                <h4>Data Scientist at UHG</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  In my collaborations with Ajay, I have found him to be sincere, hard-working and dedicated. I wish him all the best for future endeavours. I'm sure he will continue to excel wherever he goes.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/1643538450143.jpeg" class="testimonial-img" alt="">
-                <h3>Varad Srivastava</h3>
-                <h4>Generative AI at Barclays</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= News & Updates Section ======= -->
-    <section id="news" class="news section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>News &amp; Updates</h2>
-          <p>Recent highlights from research, awards, and community activities.</p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-8">
-
-            <div class="news-item">
-              <div class="news-date">2025<br>Pub.</div>
-              <i class="bi bi-journal-check news-icon"></i>
-              <div class="news-content">
-                <p><strong>Paper published</strong> in <em>Frontiers in Big Data</em> — "A Scalable Tool for Analyzing Genomic Variants of Humans Using Knowledge Graphs and Graph Machine Learning"</p>
-              </div>
-            </div>
-
-            <div class="news-item">
-              <div class="news-date">2025<br>Talk</div>
-              <i class="bi bi-mic news-icon"></i>
-              <div class="news-content">
-                <p><strong>Presented</strong> at 16th <strong>ACM BCB Conference</strong> on GPU-optimized variant calling pipeline achieving 2× speedup.</p>
-              </div>
-            </div>
-
-            <div class="news-item">
-              <div class="news-date">Oct 2024<br>Demo</div>
-              <i class="bi bi-display news-icon"></i>
-              <div class="news-content">
-                <p><strong>Demo paper presented</strong> at <strong>ACM CIKM 2024</strong>, Boise, ID — "Democratizing Variant Calling on Human Genomes Using Commodity Clusters"</p>
-              </div>
-            </div>
-
-            <div class="news-item">
-              <div class="news-date">2024<br>Award</div>
-              <i class="bi bi-trophy news-icon"></i>
-              <div class="news-content">
-                <p>Honored with <strong>$2,500 ACM UPE Executive Council Award</strong> for leading international chapter operations as Vice President.</p>
-              </div>
-            </div>
-
-            <div class="news-item">
-              <div class="news-date">2024<br>Grant</div>
-              <i class="bi bi-send news-icon"></i>
-              <div class="news-content">
-                <p>Secured <strong>$5,500 FABRIC competitive travel fellowship</strong> to present research and build global collaborations.</p>
-              </div>
-            </div>
-
-            <div class="news-item">
-              <div class="news-date">2024<br>Pub.</div>
-              <i class="bi bi-journal-check news-icon"></i>
-              <div class="news-content">
-                <p><strong>Paper published</strong> in <em>Life Science Alliance</em> — "Extreme Trait GWAS (Et-GWAS): Unraveling Rare Variants in the 3,000 Rice Genome" &mdash; 8 citations.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End News Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>If you are looking to hire me as full-time, internship or freelance. Please don't hesitate to reach out. I am always ready to listen and help. Let's make something great together.</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Columbia, MO, USA</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>ajay.kumar@missouri.edu</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 573 801 5748</p>
-              </div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.001717468856!2d-92.33398172362718!3d38.946789143787605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87dcb7c62fc40a85%3A0xe6b7fa7a7a103455!2sNaka%20Hall%2FEngineering%20Building%20West!5e0!3m2!1sen!2sus!4v1711588929149!5m2!1sen!2sus" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-              <a href="https://calendly.com/ajay-ducs/30min" target="_blank" rel="noopener" class="calendly-btn mt-3">
-                <i class="bi bi-calendar-check"></i> Schedule a Meeting
-              </a>
-              </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>2026</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed with ❤️ by Ajay Kumar.
+      <div class="card span-4 reveal">
+        <span class="label">Certifications</span>
+        <ul class="cert-list">
+          <li><b>AWS Certified Cloud Practitioner</b></li>
+          <li><b>ACM Certified Reviewer</b> · 2026</li>
+          <li><b>Responsible Conduct of Research</b> · CITI, 2024</li>
+          <li><b>Genomic Data Science</b> · Johns Hopkins, 2020</li>
+          <li><b>AI for Medicine</b> · DeepLearning.AI, 2020</li>
+          <li><b>Deep Learning</b> · IIT Madras (NPTEL), 2020</li>
+        </ul>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </div>
+</section>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Experience</h2>
+      <p>Research, industry and the odd side venture, newest first.</p>
+    </div>
 
-  <!-- Terminal Easter Egg -->
-  <button id="terminalBtn" title="Open terminal (Ctrl+K)"><i class="bi bi-terminal"></i></button>
+    <div class="timeline">
+      <article class="tl-item reveal">
+        <div class="tl-when"><b>Jul 2026 – present</b>Princeton, NJ</div>
+        <div>
+          <h3>Research Intern, Agentic AI<small>Siemens Technology · Foundational Technology AI group</small></h3>
+          <ul>
+            <li>Led applied research on an LLM-to-knowledge-graph extraction system for HVAC building data, from an ambiguous product requirement through hypothesis, ablation and error analysis to a validated, production-track framework.</li>
+            <li>Built the system's evaluation pipeline: a unit-consistency validator at 99.7% accuracy (prior approaches: 67–84%), with confidence-based abstention that routes low-certainty extractions to human review instead of emitting a wrong triple.</li>
+            <li>Two invention disclosures filed; paper submitted to the CAIN 2027 industry track, co-located with ICSE.</li>
+          </ul>
+          <div class="tl-tags"><span>agentic AI</span><span>LLM evaluation</span><span>knowledge graphs</span><span>Python</span></div>
+        </div>
+      </article>
 
-  <div id="terminal-overlay" style="display:none;">
-    <div class="terminal-window">
-      <div class="terminal-header">
-        <div class="terminal-dots"><span class="t-dot red"></span><span class="t-dot yellow"></span><span class="t-dot green"></span></div>
-        <span class="terminal-title">ajay@research:~</span>
-        <button class="terminal-close" id="terminalClose">&#x2715;</button>
+      <article class="tl-item reveal">
+        <div class="tl-when"><b>Aug 2022 – present</b>Columbia, MO</div>
+        <div>
+          <h3>Graduate Research &amp; Teaching Assistant<small>Scalable Data Science Lab, University of Missouri · advisor Dr. Praveen Rao</small></h3>
+          <ul>
+            <li>First author, DeepNeuroBench (IEEE IISWC 2026): a benchmark for cost- and energy-efficient neuroimaging workflows on commodity clusters. Choosing the right parallelism cut energy per subject by 72% at 10% of the cost.</li>
+            <li>First author, ACM BCB 2025: distributed multi-GPU variant calling with NVIDIA Parabricks and job-shop scheduling, 2× throughput across FABRIC, CloudLab and AWS with no new hardware.</li>
+            <li>Built VariantKG with the lab: 650 GB of variant calls from 1,508 genomes turned into a 4-billion-statement RDF knowledge graph with graph ML on top (Frontiers in Big Data, 2025).</li>
+            <li>Deployed G2PDeep-v2, a multi-model deep learning platform for multi-omics cancer prediction, in production use by 120+ researchers since 2023.</li>
+            <li>Fine-tuned and benchmarked BERT and RoBERTa for batch inference over 22M documents; wrote the cyberinfrastructure curriculum (FABRIC, CloudLab, ACCESS, Slurm, Globus) for NSF CyberTraining award 2417875 and helped run the 2026 NSF workshop.</li>
+          </ul>
+          <div class="tl-tags"><span>distributed systems</span><span>GPU computing</span><span>genomics</span><span>neuroimaging</span><span>Slurm</span><span>FABRIC</span></div>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-when"><b>Aug 2020 – Jul 2022</b>Hyderabad, India</div>
+        <div>
+          <h3>Project Associate I, Statistical Genetics<small>International Rice Research Institute · South Asia Hub</small></h3>
+          <ul>
+            <li>Shipped DeepMap, an open-source multi-model deep learning package for genomic prediction that beat classical ML baselines by 13–20%; published to PyPI and used in ten downstream breeding studies.</li>
+            <li>Led the AWS–IRRI partnership that grew compute capacity for genomics researchers by 50%.</li>
+            <li>Trained 100+ scientists across institutions in R, GWAS, genomic selection and Python automation; co-authored Et-GWAS (Life Science Alliance, 2024).</li>
+          </ul>
+          <div class="tl-tags"><span>deep learning</span><span>GWAS</span><span>R</span><span>AWS</span></div>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-when"><b>2020 – 2022</b>Remote</div>
+        <div>
+          <h3>AI Event Ambassador &amp; podcast host<small>DeepLearning.AI (Pie &amp; AI Hyderabad) · The Scientific Monk on YouTube</small></h3>
+          <ul>
+            <li>Hosted 10+ episodes with AI researchers and faculty on getting into Ph.D. programs and industry research, reaching about 10,000 listeners and a community of 8,000+ learners.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <div class="tl-when"><b>Jun – Aug 2019</b>New Delhi, India</div>
+        <div>
+          <h3>Software Engineer Intern<small>Design Innovation Center, School of Planning and Architecture</small></h3>
+          <ul>
+            <li>Tested and shipped features for Urban STeP, a government participatory-planning site that reached 15,000 visitors; built photo tagging for a biodiversity field app on Android.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <div class="edu-grid">
+      <div class="card reveal">
+        <span class="label">Ph.D. · 2022 – Dec 2026</span>
+        <h3>Computer Science, University of Missouri</h3>
+        <p>GPA 4.0. Thesis: optimizing scientific workflows on NSF-funded cyberinfrastructure. Advisor: Prof. Praveen Rao.</p>
       </div>
-      <div class="terminal-body" id="terminalBody">
-        <div class="terminal-line terminal-welcome">Welcome to Ajay's Research Terminal v1.0</div>
-        <div class="terminal-line terminal-hint">Type <span class="cmd-highlight">help</span> to see available commands. Press <span class="cmd-highlight">Esc</span> or <span class="cmd-highlight">Ctrl+K</span> to close.</div>
-        <div id="terminalOutput"></div>
-        <div class="terminal-input-row">
-          <span class="terminal-prompt">ajay@research:~$&nbsp;</span>
-          <input type="text" id="terminalInput" autocomplete="off" spellcheck="false">
+      <div class="card reveal">
+        <span class="label">M.Sc. · 2018 – 2020</span>
+        <h3>Computer Science, Banaras Hindu University</h3>
+        <p>8.23/10. Thesis supervised by Dr. Manoj Kumar Singh (now at GIST, South Korea).</p>
+      </div>
+      <div class="card reveal">
+        <span class="label">B.Sc. · 2015 – 2018</span>
+        <h3>Computer Science, University of Delhi</h3>
+        <p>Where the 10,000 hours of coding started.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEARCH ================= -->
+<section id="research" class="section research">
+  <div class="wrap">
+    <div class="masthead reveal">
+      <span>Research notes · Vol. 5, 2026</span>
+      <span class="title">Publications &amp; talks</span>
+      <span>Distributed computing · Genomics · AI</span>
+    </div>
+
+    <div class="research-grid">
+      <div>
+        <h2 class="serif reveal">Making genome-scale science run on <em>any</em> cluster, and knowing when the model is wrong.</h2>
+        <div class="scholar-row reveal">
+          <div><b>7</b><span>peer-reviewed</span></div>
+          <div><b>3</b><span>first author</span></div>
+          <div><b>20</b><span>citations</span></div>
+          <div><b>3</b><span>h-index</span></div>
+        </div>
+        <p class="fig-note reveal">Counts from <a href="https://scholar.google.com/citations?user=lVXFrj0AAAAJ" target="_blank" rel="noopener">Google Scholar</a>, October 2026.</p>
+      </div>
+      <div class="fig-stack reveal">
+        <figure class="fig">
+          <span class="label">Fig. 1 · Variant calling, relative throughput</span>
+          <div class="bar-row"><span>CPU pipeline</span><div class="bar" style="width:45%"></div><span>1×</span></div>
+          <div class="bar-row"><span>Multi-GPU + scheduling</span><div class="bar hot" style="width:90%"></div><b>2×</b></div>
+          <figcaption><b>Human-genome variant calling</b> with NVIDIA Parabricks and job-shop scheduling across FABRIC, CloudLab and AWS. ACM BCB 2025.</figcaption>
+        </figure>
+        <figure class="fig">
+          <span class="label">Fig. 2 · Neuroimaging preprocessing per subject</span>
+          <div class="bar-row"><span>High-core CPU cluster</span><div class="bar" style="width:100%"></div><span>1.0</span></div>
+          <div class="bar-row"><span>CPU + GPU cluster</span><div class="bar hot" style="width:28%"></div><b>0.28</b></div>
+          <figcaption><b>Energy per subject</b> running DeepPrep on six public datasets across four cluster configurations. The CPU + GPU cluster used ~72% less energy and 74% less power. IEEE IISWC 2026.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="section-head reveal" style="margin-top:56px">
+      <h2 style="font-family:var(--serif);font-weight:400;font-size:40px">Publications</h2>
+      <div class="pub-filters" data-filter-group=".pub">
+        <button class="active" data-filter="all" type="button">All</button>
+        <button data-filter="first" type="button">First author</button>
+        <button data-filter="journal" type="button">Journal</button>
+        <button data-filter="conference" type="button">Conference</button>
+        <button data-filter="preprint" type="button">Preprint</button>
+      </div>
+    </div>
+
+    <ol class="pubs reveal">
+      <li class="pub" data-tags="first conference">
+        <div>
+          <h3><a href="https://github.com/xenificity/DeepNeuroBench" target="_blank" rel="noopener">DeepNeuroBench: A Benchmark for Cost and Energy-Efficient Execution of Neuroimaging Workflows on Commodity Clusters</a></h3>
+          <p class="authors"><b>A. Kumar</b>, P. Rao, S. Nair, V. Omelyusik</p>
+          <p class="venue">IEEE International Symposium on Workload Characterization (IISWC), Boulder, CO, 2026</p>
+          <div class="meta"><span class="first">First author</span><span>Conference</span><span>NSF 2417875</span></div>
+          <details><summary>Abstract</summary><p>We evaluate DeepPrep, a GPU-accelerated neuroimaging preprocessing pipeline, on six public datasets and four cluster configurations across makespan, power, energy, carbon and cost. The best configuration depends on the structural-to-functional scan size ratio; a CPU+GPU cluster cut energy by about 72% and power by 74% versus a high-core CPU cluster. We give a procedure for picking the cluster for a chosen target metric. Reproducibility artifact on GitHub; paper forthcoming on IEEE Xplore.</p></details>
+        </div>
+      </li>
+      <li class="pub" data-tags="first conference">
+        <div>
+          <h3>Layer-Boundary Validation for a Production LLM Pipeline: Experiences at Siemens</h3>
+          <p class="authors"><b>A. Kumar</b>, C. Budnik, et al.</p>
+          <p class="venue">CAIN 2027, industry track (co-located with ICSE) — under review</p>
+          <div class="meta"><span class="first">First author</span><span class="review">Under review</span><span>Industry</span></div>
+          <details><summary>Abstract</summary><p>A layered validation framework for an agentic LLM pipeline that extracts structured knowledge from industrial data. It catches silent failures at component boundaries and routes low-confidence outputs to human review rather than emitting incorrect results. Two related invention disclosures filed at Siemens Technology.</p></details>
+        </div>
+      </li>
+      <li class="pub" data-tags="first conference">
+        <div>
+          <h3><a href="https://dl.acm.org/doi/abs/10.1145/3768322.3769016" target="_blank" rel="noopener">Optimizing the Variant Calling Pipeline Execution on Human Genomes Using GPU-Enabled Machines</a></h3>
+          <p class="authors"><b>A. Kumar</b>, P. Rao, P. Sanders</p>
+          <p class="venue">16th ACM Conference on Bioinformatics, Computational Biology and Health Informatics (ACM BCB), Philadelphia, 2025</p>
+          <div class="meta"><span class="first">First author</span><span>Conference</span></div>
+          <details><summary>Abstract</summary><p>A distributed multi-GPU pipeline for variant calling on COVID-19 human genomes using NVIDIA Parabricks, scheduled with a job-shop formulation (Google OR-Tools). Doubles throughput on FABRIC and CloudLab without extra hardware.</p></details>
+        </div>
+      </li>
+      <li class="pub" data-tags="journal">
+        <div>
+          <h3><a href="https://www.frontiersin.org/journals/big-data/articles/10.3389/fdata.2024.1466391/full" target="_blank" rel="noopener">A Scalable Tool for Analyzing Genomic Variants of Humans Using Knowledge Graphs and Graph Machine Learning</a></h3>
+          <p class="authors">S. Prasanna, <b>A. Kumar</b>, D. Rao, E. J. Simoes, P. Rao</p>
+          <p class="venue">Frontiers in Big Data, 2025 · 6 citations</p>
+          <div class="meta"><span>Journal</span><span>Open access</span></div>
+          <details><summary>Abstract</summary><p>VariantKG converts 650 GB of variant-call data from 1,508 genomes into a 4-billion-statement RDF knowledge graph on NSF FABRIC and CloudLab, so cohort questions become SPARQL queries, and adds graph machine learning for downstream inference. An earlier version appeared on arXiv (2407.20879).</p></details>
+        </div>
+      </li>
+      <li class="pub" data-tags="conference">
+        <div>
+          <h3><a href="https://dl.acm.org/doi/abs/10.1145/3627673.3679221" target="_blank" rel="noopener">A Scalable Tool for Democratizing Variant Calling on Human Genomes Using Commodity Clusters</a></h3>
+          <p class="authors">K. Shehzad, <b>A. Kumar</b>, M. Schutz, C. Webb, P. Nalela, M. J. Das, P. Rao</p>
+          <p class="venue">33rd ACM International Conference on Information and Knowledge Management (CIKM), demo track, Boise, 2024 · 1 citation</p>
+          <div class="meta"><span>Conference</span><span>Demo</span></div>
+          <details><summary>Abstract</summary><p>Variant calling on human genomes using Apache Spark and Hadoop on commodity clusters across FABRIC, CloudLab and AWS. Source: <a href="https://github.com/MU-Data-Science/GAF" target="_blank" rel="noopener">MU-Data-Science/GAF</a>.</p></details>
+        </div>
+      </li>
+      <li class="pub" data-tags="journal">
+        <div>
+          <h3><a href="https://www.life-science-alliance.org/content/7/3/e202302352" target="_blank" rel="noopener">Extreme Trait GWAS (Et-GWAS): Unraveling Rare Variants in the 3,000 Rice Genome</a></h3>
+          <p class="authors">N. Gnanapragasam, V. V. Prasanth, K. T. Sundaram, <b>A. Kumar</b>, B. Pahi, et al.</p>
+          <p class="venue">Life Science Alliance, 2024 · 9 citations</p>
+          <div class="meta"><span>Journal</span></div>
+          <details><summary>Abstract</summary><p>An extreme-trait GWAS method for finding rare variants across the 3,000 Rice Genomes panel, enabling precision genomic selection for crop improvement.</p></details>
+        </div>
+      </li>
+      <li class="pub" data-tags="first preprint">
+        <div>
+          <h3><a href="https://www.biorxiv.org/content/10.1101/2023.07.26.550275v1" target="_blank" rel="noopener">DeepMap: A Deep Learning-Based Model with a Four-Line Code for Prediction-Based Breeding in Crops</a></h3>
+          <p class="authors"><b>A. Kumar</b>, K. T. Sundaram, N. Gnanapragasam, U. M. Singh, K. J. Pranesh, et al.</p>
+          <p class="venue">bioRxiv, 2023 · 1 citation</p>
+          <div class="meta"><span class="first">First author</span><span>Preprint</span><span>PyPI package</span></div>
+          <details><summary>Abstract</summary><p>A multi-model deep learning package for regression and classification on genomic data, runnable in four lines of Python. Outperforms classical ML baselines by 13–20%; used in ten downstream breeding studies.</p></details>
+        </div>
+      </li>
+    </ol>
+
+    <!-- Talks -->
+    <div class="section-head reveal" style="margin-top:64px">
+      <h2 style="font-family:var(--serif);font-weight:400;font-size:40px">Talks &amp; workshops</h2>
+      <p>Where the work has been presented. Drag the map.</p>
+    </div>
+    <div class="talks-grid">
+      <div class="reveal">
+        <article class="talk">
+          <span class="yr">2026</span>
+          <div><span class="kind">Paper talk</span><h3>DeepNeuroBench: cost- and energy-efficient neuroimaging workflows</h3><p>IEEE IISWC 2026 · Boulder, Colorado · September 29, 2026 · IISWC travel award</p></div>
+        </article>
+        <article class="talk">
+          <span class="yr">2026</span>
+          <div><span class="kind">Organizer</span><h3>NSF workshop: Scientific Workflows for Brain and Behavioral Research</h3><p>University of Missouri EECS, virtual · August 2026 · with Dr. Satish Nair and Dr. Praveen Rao</p></div>
+        </article>
+        <article class="talk">
+          <span class="yr">2025</span>
+          <div><span class="kind">Paper talk</span><h3>Optimizing variant calling on human genomes with GPU-enabled machines</h3><p>16th ACM BCB · Philadelphia, Pennsylvania · October 2025</p></div>
+        </article>
+        <article class="talk">
+          <span class="yr">2024</span>
+          <div><span class="kind">Demo</span><h3>Democratizing variant calling on human genomes using commodity clusters</h3><p>33rd ACM CIKM · Boise, Idaho · October 2024</p></div>
+        </article>
+        <article class="talk">
+          <span class="yr">2023</span>
+          <div><span class="kind">Tutorial</span><h3>G2PDeep-v2: multi-omics deep learning for phenotype prediction</h3><p>ISMB/ECCB 2023 · Lyon, France</p></div>
+        </article>
+        <article class="talk">
+          <span class="yr">2021</span>
+          <div><span class="kind">Invited workshop</span><h3>R, GWAS, QTLseqr, genomic selection and Python automation for researchers</h3><p>IRRI South Asia Hub · 100+ scientists trained</p></div>
+        </article>
+        <article class="talk">
+          <span class="yr">2021</span>
+          <div><span class="kind">Podcast</span><h3>Pie &amp; AI Hyderabad: how to prepare for a Ph.D., for FAANG, for data science</h3><p>DeepLearning.AI · 10+ episodes, ~10,000 listeners</p></div>
+        </article>
+      </div>
+      <div id="talk-map" class="reveal" role="img" aria-label="Map of places Ajay has presented or worked"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <h2>Projects</h2>
+        <p style="margin-top:10px">Research software, platforms in production, and apps I built because I wanted them to exist.</p>
+      </div>
+      <div class="filters" data-filter-group=".proj">
+        <button class="active" data-filter="all" type="button">All</button>
+        <button data-filter="research" type="button">Research</button>
+        <button data-filter="ai" type="button">AI / LLM</button>
+        <button data-filter="apps" type="button">Apps</button>
+        <button data-filter="oss" type="button">Open source</button>
+      </div>
+    </div>
+
+    <div class="projects">
+      <article class="card proj hack reveal" data-tags="ai apps">
+        <span class="badge">1st place</span>
+        <div class="thumb"><img src="assets/img/hack.jpeg" alt="Ajay beside a Claude banner at the hackathon" loading="lazy"></div>
+        <div class="top"><span class="kind">Hackathon · Claude Builder Club, Mizzou</span><span class="yr">2026</span></div>
+        <h3>Equine Lameness Predictor</h3>
+        <p>A web app that predicts the anatomical location of lameness in horses from inertial-sensor gait data and clinical records, built end to end over a weekend with Claude. First among Mizzou teams.</p>
+        <div class="links"><a href="https://mizzou-lameness-predictor.streamlit.app" target="_blank" rel="noopener">Live demo</a><a href="https://github.com/xenificity/equine-lameness-predictor" target="_blank" rel="noopener">GitHub</a></div>
+      </article>
+
+      <article class="card proj reveal" data-tags="ai">
+        <div class="top"><span class="kind">Siemens Technology</span><span class="yr">2026</span></div>
+        <h3>Validation for agentic LLM pipelines</h3>
+        <p>Layered validation for an LLM-to-knowledge-graph pipeline over industrial building data: a unit-consistency validator at 99.7% accuracy and confidence-based abstention that sends uncertain extractions to a human. Two invention disclosures.</p>
+        <div class="links"><a class="none">Proprietary · paper under review at CAIN 2027</a></div>
+      </article>
+
+      <article class="card proj reveal" data-tags="research oss">
+        <div class="top"><span class="kind">Benchmark · IEEE IISWC 2026</span><span class="yr">2025–26</span></div>
+        <h3>DeepNeuroBench</h3>
+        <p>Runs FreeSurfer-class neuroimaging pipelines on four cluster configurations and measures makespan, power, energy, carbon and cost. Matching parallelism to the workload cut energy per subject by 72% at 10% of the cost.</p>
+        <div class="links"><a href="https://github.com/xenificity/DeepNeuroBench" target="_blank" rel="noopener">GitHub artifact</a></div>
+      </article>
+
+      <article class="card proj reveal" data-tags="research oss">
+        <div class="top"><span class="kind">Scheduling · FABRIC</span><span class="yr">2026</span></div>
+        <h3>MRIPrepCloud</h3>
+        <p>DeepPrep on a four-node Slurm cluster with GPU sharding, critical-path job priorities and an elastic CPU spill cap. Same outputs, 12% shorter wall time, CPU utilization from 71% to 81%.</p>
+        <div class="links"><a href="https://github.com/xenificity/MRIPrepCloud" target="_blank" rel="noopener">GitHub</a></div>
+      </article>
+
+      <article class="card proj reveal" data-tags="research oss">
+        <div class="top"><span class="kind">GPU pipeline · ACM BCB 2025, CIKM 2024</span><span class="yr">2024–25</span></div>
+        <h3>GPU-GAF: variant calling at scale</h3>
+        <p>Distributed multi-GPU variant calling with NVIDIA Parabricks plus a job-shop scheduler that doubled throughput across FABRIC, CloudLab and AWS. Tooling for the NSF RAPID project to democratize genome analysis.</p>
+        <div class="links"><a href="https://github.com/MU-Data-Science/GAF" target="_blank" rel="noopener">GitHub</a><a href="https://dl.acm.org/doi/abs/10.1145/3768322.3769016" target="_blank" rel="noopener">Paper</a></div>
+      </article>
+
+      <article class="card proj reveal" data-tags="research">
+        <div class="top"><span class="kind">Knowledge graph · Frontiers in Big Data</span><span class="yr">2023–24</span></div>
+        <h3>VariantKG</h3>
+        <p>650 GB of variant calls from 1,508 genomes as a 4-billion-statement RDF graph, so cohort questions become SPARQL queries instead of batch jobs. Graph ML on top for inference.</p>
+        <div class="links"><a href="https://www.frontiersin.org/journals/big-data/articles/10.3389/fdata.2024.1466391/full" target="_blank" rel="noopener">Paper</a><a href="https://arxiv.org/abs/2407.20879" target="_blank" rel="noopener">arXiv</a></div>
+      </article>
+
+      <article class="card proj reveal" data-tags="research ai">
+        <div class="top"><span class="kind">Platform · in production</span><span class="yr">2022–</span></div>
+        <h3>G2PDeep-v2</h3>
+        <p>Multi-model deep learning for genotype-to-phenotype prediction from multi-omics data. Python, TensorFlow/Keras, React and SQL; used by 120+ researchers since 2023. I built and deployed the platform; tutorial at ISMB/ECCB 2023.</p>
+        <div class="links"><a href="https://g2pdeep.org/" target="_blank" rel="noopener">g2pdeep.org</a></div>
+      </article>
+
+      <article class="card proj reveal" data-tags="research oss">
+        <div class="top"><span class="kind">Package · IRRI</span><span class="yr">2020–22</span></div>
+        <h3>DeepMap</h3>
+        <p>Open-source deep learning for prediction-based crop breeding: regression and classification on genomic data in four lines of Python. 13–20% over classical ML; used in ten breeding studies.</p>
+        <div class="links"><a href="https://www.biorxiv.org/content/10.1101/2023.07.26.550275v1" target="_blank" rel="noopener">Preprint</a><a href="https://test.pypi.org/project/DeepMap-1.0/" target="_blank" rel="noopener">PyPI</a></div>
+      </article>
+
+      <article class="card proj reveal" data-tags="ai oss">
+        <div class="top"><span class="kind">NLP · big data</span><span class="yr">2024</span></div>
+        <h3>Vaccine sentiment with BERT and RoBERTa</h3>
+        <p>Fine-tuned transformer classifiers for COVID-19 vaccine tweets and ran batch inference at scale with Spark, with an evaluation pipeline over 22M documents.</p>
+        <div class="links"><a href="https://github.com/xenificity/Sentiment_Analysis_using_LLMs" target="_blank" rel="noopener">GitHub</a></div>
+      </article>
+
+      <article class="card proj reveal" data-tags="apps">
+        <div class="top"><span class="kind">iOS · App Store</span><span class="yr">2026</span></div>
+        <h3>Operation Fit: Plan &amp; Track</h3>
+        <p>A fitness planner that turns an intake into a nutrition and training plan, then tracks it. SwiftUI, SwiftData, on-device Apple Foundation Models for coaching text, no accounts, no server.</p>
+        <div class="links"><a href="https://apps.apple.com/app/operation-fit-plan-track/id6819884776" target="_blank" rel="noopener">App Store</a><a href="https://xenificity.github.io/operationfit/" target="_blank" rel="noopener">Support</a></div>
+      </article>
+
+      <article class="card proj reveal" data-tags="apps oss">
+        <div class="top"><span class="kind">iOS · civic</span><span class="yr">2026</span></div>
+        <h3>CoMo Events</h3>
+        <p>Every public event in Columbia, MO on one map, fed by a Python aggregator that rebuilds the feed on a schedule with GitHub Actions. Free, open source.</p>
+        <div class="links"><a href="https://github.com/xenificity/comoevents" target="_blank" rel="noopener">GitHub</a></div>
+      </article>
+
+      <article class="card proj reveal" data-tags="apps">
+        <div class="top"><span class="kind">iOS · game</span><span class="yr">2026</span></div>
+        <h3>StackDrop: Tower Stacker</h3>
+        <p>A one-tap block-stacking arcade game in SpriteKit with a seeded daily challenge and Game Center leaderboards. Free, no ads.</p>
+        <div class="links"><a href="https://xenificity.github.io/stackdrop/" target="_blank" rel="noopener">Game page</a></div>
+      </article>
+    </div>
+
+    <p class="earlier reveal"><b>Earlier work:</b> Urban STeP, a participatory planning toolkit for the School of Planning and Architecture (<a href="https://urbanstep.in" target="_blank" rel="noopener">urbanstep.in</a>) · a biodiversity field app for Android · GestureHandRecognition, a webcam hand-gesture classifier · IRRI-Automation, scripts that replaced manual genomics bookkeeping · <a href="https://github.com/xenificity/slurm_installation" target="_blank" rel="noopener">Slurm cluster install scripts</a> · <a href="https://github.com/xenificity/fabric-slice-creator" target="_blank" rel="noopener">FABRIC slice creator</a> notebooks.</p>
+  </div>
+</section>
+
+<!-- ================= TEACHING ================= -->
+<section id="teaching" class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Teaching</h2>
+      <p>Outstanding Teaching Assistant Award, University of Missouri.</p>
+    </div>
+    <div class="teach-grid">
+      <div class="card reveal">
+        <span class="label">Courses · University of Missouri · 2025–26</span>
+        <div>
+          <div class="course"><code>CS 4080</code><div>Parallel Programming for High Performance Computing<br><span>multi-process, multi-threaded, distributed and GPU programming</span></div></div>
+          <div class="course"><code>CS 3910</code><div>Advanced Cybersecurity<br><span>network security, intrusion detection, forensics</span></div></div>
+          <div class="course"><code>CMP_SC 1300</code><div>Computing with Data in Python<br><span>programming and data science for non-CS majors</span></div></div>
+          <div class="course"><code>CS/ECE 4001</code><div>Integrated Cyberinfrastructure &amp; Biomedical Engineering<br><span>neuroscience pipelines on FABRIC and CloudLab</span></div></div>
+          <div class="course"><code>CS 8001</code><div>Graduate teaching materials<br><span>cloud computing and Python</span></div></div>
+        </div>
+      </div>
+      <div class="card ink reveal">
+        <span class="label">Workshops &amp; curriculum</span>
+        <ul class="awards-list" style="font-size:15.5px">
+          <li><span>Wrote the cyberinfrastructure curriculum (FABRIC, CloudLab, ACCESS, Slurm, Globus) for NSF CyberTraining award 2417875 — <a href="https://cyneuro.github.io" target="_blank" rel="noopener">cyneuro.github.io</a></span></li>
+          <li><span>Helped organize and run the NSF workshop "Scientific Workflows for Brain and Behavioral Research", August 2026</span></li>
+          <li><span>Trained 100+ scientists at IRRI in R, GWAS, QTLseqr, genomic selection and Python automation</span></li>
+          <li><span>Mentored students across all four UM System campuses in the NSF neuroscience cyberinfrastructure course</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NEWS ================= -->
+<section id="news" class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>In the news</h2>
+      <p>Coverage from Mizzou Engineering, followed by a running log of updates.</p>
+    </div>
+    <div class="news-grid">
+      <a class="card news-card reveal" href="https://engineering.missouri.edu/2026/computer-science-students-take-on-neuroscience/" target="_blank" rel="noopener">
+        <div class="outlet"><span class="label">Mizzou Engineering</span><span class="label">Feb 16, 2026</span></div>
+        <h3>Computer science students take on neuroscience</h3>
+        <p>Students in the NSF-funded cyberinfrastructure course presented projects from EEG image reconstruction to MRI depression research. Ajay and Vladimir Omelyusik supported the teams with neuroscience pipelines and cyberinfrastructure.</p>
+        <span class="read">Read the article →</span>
+      </a>
+      <a class="card news-card reveal" href="https://engineering.missouri.edu/2025/increasing-access-to-cybertraining-technology/" target="_blank" rel="noopener">
+        <div class="outlet"><span class="label">Mizzou Engineering</span><span class="label">Jan 16, 2025</span></div>
+        <h3>Increasing access to cybertraining technology</h3>
+        <p>Satish Nair and Praveen Rao received a nearly $500,000 NSF grant to launch an advanced cyberinfrastructure training program for neuroscience. Ajay is part of the team that built and teaches it.</p>
+        <span class="read">Read the article →</span>
+      </a>
+    </div>
+
+    <div class="updates reveal">
+      <span class="label">Updates</span>
+      <div class="update"><span class="when">Oct 2026</span><p><b>Operation Fit</b> approved and released on the App Store, my first app to ship.</p></div>
+      <div class="update"><span class="when">Sep 2026</span><p><b>Presented DeepNeuroBench</b> at IEEE IISWC 2026 in Boulder, supported by an IISWC travel award.</p></div>
+      <div class="update"><span class="when">Sep 2026</span><p><b>Two invention disclosures</b> filed at Siemens on validation for agentic AI pipelines; paper submitted to CAIN 2027.</p></div>
+      <div class="update"><span class="when">Aug 2026</span><p><b>Co-organized</b> the NSF workshop "Scientific Workflows for Brain and Behavioral Research", hosted by Mizzou EECS.</p></div>
+      <div class="update"><span class="when">Jul 2026</span><p><b>Joined Siemens Technology</b> in Princeton as a research intern in the Foundational Technology AI group.</p></div>
+      <div class="update"><span class="when">May 2026</span><p><b>First place</b> at the Claude Builder Club Hackathon at Mizzou with the Equine Lameness Predictor.</p></div>
+      <div class="update"><span class="when">Mar 2026</span><p><b>ACM Certified Reviewer</b>; reviewing for ACM venues.</p></div>
+      <div class="update"><span class="when">Oct 2025</span><p><b>Presented</b> GPU-enabled variant calling at the 16th ACM BCB in Philadelphia.</p></div>
+      <div class="update"><span class="when">2025</span><p><b>Paper published</b> in Frontiers in Big Data: VariantKG, knowledge graphs and graph ML over human genomic variants.</p></div>
+      <div class="update"><span class="when">2025</span><p><b>Outstanding Teaching Assistant Award</b>, University of Missouri.</p></div>
+      <div class="update"><span class="when">Oct 2024</span><p><b>Demo</b> at ACM CIKM 2024 in Boise: democratizing variant calling on commodity clusters.</p></div>
+      <div class="update"><span class="when">2024</span><p><b>$2,500 ACM UPE Executive Council Award</b> for leading the Mizzou chapter as Vice President; <b>$5,500 FABRIC travel fellowship</b>.</p></div>
+      <div class="update"><span class="when">2024</span><p><b>Et-GWAS published</b> in Life Science Alliance.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section id="colleagues" class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>What colleagues say</h2>
+      <p>From LinkedIn recommendations.</p>
+    </div>
+    <div class="testis">
+      <div class="card testi reveal">
+        <p>Ajay's innovative work on the G2PDeep application significantly improved system performance. His speed, accuracy, and clear communication make him invaluable. Any organization would be fortunate to have Ajay on their team.</p>
+        <div class="who"><img src="assets/img/testimonials/1712718090934.jpeg" alt="" loading="lazy"><div><b>Trinath Adusumilli</b><span>Full Stack Developer, Mastercard</span></div></div>
+      </div>
+      <div class="card testi reveal">
+        <p>An exceptional computational biologist and programmer. His proficiency in developing accurate packages and software for biological data analysis is impressive. His willingness to help others and listen attentively is commendable.</p>
+        <div class="who"><img src="assets/img/testimonials/1722701510878.jpeg" alt="" loading="lazy"><div><b>Bandana Pahi</b><span>Bioinformatician, IRRI South Asia Hub</span></div></div>
+      </div>
+      <div class="card testi reveal">
+        <p>Ajay excels in computational biology and AI, with a unique approach to exploring new methods. His ability to apply his skills across domains makes him highly recommendable for positions in research and the tech industry.</p>
+        <div class="who"><img src="assets/img/testimonials/1727193890285.jpeg" alt="" loading="lazy"><div><b>Vamshi Venkat</b><span>Research Associate / Data Scientist, Johns Hopkins University</span></div></div>
+      </div>
+      <div class="card testi reveal">
+        <p>Having known Ajay since college and worked with him on various projects, I can attest to his hard work and commitment to excellence in researching new domains and applying ML/DL concepts.</p>
+        <div class="who"><img src="assets/img/testimonials/1716005713327.jpeg" alt="" loading="lazy"><div><b>Atul Joshi</b><span>Data Scientist, UnitedHealth Group</span></div></div>
+      </div>
+      <div class="card testi reveal">
+        <p>In my collaborations with Ajay, I have found him to be sincere, hard-working and dedicated. I'm sure he will continue to excel wherever he goes.</p>
+        <div class="who"><img src="assets/img/testimonials/1643538450143.jpeg" alt="" loading="lazy"><div><b>Varad Srivastava</b><span>Generative AI, Barclays</span></div></div>
+      </div>
+      <div class="card ink testi reveal">
+        <span class="label">Community</span>
+        <p style="color:inherit">7,700+ followers on LinkedIn, 10+ podcast episodes with AI researchers, 100+ scientists trained, and a lab full of students who know where the Slurm logs are.</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/xenificity/" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,.3)">LinkedIn</a>
+          <a href="https://www.youtube.com/@thescientificmonk2299" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,.3)">YouTube</a>
+          <a href="https://github.com/xenificity" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,.3)">GitHub</a>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Contact</h2>
+      <p>Hiring for 2027, collaborating on a paper, or want help with a cluster? Write to me.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="card ink reveal">
+        <span class="label">Email</span>
+        <p class="contact-big"><a href="mailto:ajay.ducs@gmail.com">ajay.ducs@gmail.com</a></p>
+        <ul class="contact-list" style="color:inherit">
+          <li><b>Academic</b> · <a href="mailto:ajay.kumar@missouri.edu">ajay.kumar@missouri.edu</a></li>
+          <li><b>Phone</b> · <a href="tel:+15738015748">+1 573 801 5748</a></li>
+          <li><b>Where</b> · Princeton, NJ until December; Columbia, MO otherwise</li>
+          <li><b>Meet</b> · <a href="https://calendly.com/ajay-ducs/30min" target="_blank" rel="noopener">book 30 minutes on Calendly</a></li>
+        </ul>
+        <div class="socials" style="margin-top:auto">
+          <a href="https://www.linkedin.com/in/xenificity/" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,.3)">LinkedIn</a>
+          <a href="https://github.com/xenificity" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,.3)">GitHub</a>
+          <a href="https://scholar.google.com/citations?user=lVXFrj0AAAAJ" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,.3)">Scholar</a>
+          <a href="https://x.com/xenificity" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,.3)">X</a>
+          <a href="assets/files/AjayKumar_CV.pdf" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,.3)">CV (PDF)</a>
+        </div>
+      </div>
+      <div class="card reveal">
+        <span class="label">Send a message</span>
+        <form id="contact-form" class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="post" data-to="ajay.ducs@gmail.com">
+          <label>Name<input name="name" type="text" required autocomplete="name"></label>
+          <label>Email<input name="email" type="email" required autocomplete="email"></label>
+          <label class="full">Subject<input name="subject" type="text" required></label>
+          <label class="full">Message<textarea name="message" required></textarea></label>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="actions">
+            <button class="btn" type="submit">Send</button>
+            <span class="status" role="status" aria-live="polite"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- Leaflet Map JS -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</main>
 
-  <!-- Particles.js -->
+<footer>
+  <div class="wrap">
+    <span>© 2026 Ajay Kumar · Built by hand, hosted on GitHub Pages.</span>
+    <span class="visits"><img src="https://hits.sh/ajay-kumar.com.svg?view=total&style=flat&label=visitors&color=2545e8&labelColor=15161a" alt="Visitor count" width="88" height="20" loading="eager" decoding="async"></span>
+    <span><a href="#top">Back to top ↑</a></span>
+  </div>
+</footer>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <div class="trailing-cursor"></div>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-
-      // ── Dark Mode ──────────────────────────────────────────────
-      const toggle = document.getElementById('darkModeToggle');
-      const icon   = document.getElementById('darkModeIcon');
-      if (localStorage.getItem('darkMode') === 'on') {
-        document.body.classList.add('dark-mode');
-        if (icon) icon.className = 'bi bi-sun-fill';
-      }
-      if (toggle) toggle.addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
-        const isDark = document.body.classList.contains('dark-mode');
-        icon.className = isDark ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
-        localStorage.setItem('darkMode', isDark ? 'on' : 'off');
-      });
-
-      // ── Publication filter ─────────────────────────────────────
-      document.querySelectorAll('.pub-filter-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-          document.querySelectorAll('.pub-filter-btn').forEach(b => b.classList.remove('active'));
-          this.classList.add('active');
-          const filter = this.dataset.filter;
-          document.querySelectorAll('.pub-item').forEach(item => {
-            if (filter === 'all' || item.dataset.type === filter) {
-              item.classList.remove('hidden');
-            } else {
-              item.classList.add('hidden');
-            }
-          });
-        });
-      });
-
-      // ── Talks world map ────────────────────────────────────────
-      const mapEl = document.getElementById('talk-map');
-      if (mapEl) {
-        const map = L.map('talk-map', { scrollWheelZoom: false }).setView([30, 10], 2);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a>',
-          maxZoom: 18
-        }).addTo(map);
-
-        const pinIcon = L.divIcon({
-          className: '',
-          html: '<div style="background:#149ddd;width:12px;height:12px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 6px rgba(20,157,221,0.8)"></div>',
-          iconSize: [12, 12],
-          iconAnchor: [6, 6]
-        });
-        const homeIcon = L.divIcon({
-          className: '',
-          html: '<div style="background:#18d26e;width:14px;height:14px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 8px rgba(24,210,110,0.8)"></div>',
-          iconSize: [14, 14],
-          iconAnchor: [7, 7]
-        });
-
-        const locations = [
-          { lat: 38.95, lng: -92.33, label: '🏠 University of Missouri, Columbia MO', icon: homeIcon },
-          { lat: 43.62, lng: -116.20, label: '🎤 ACM CIKM 2024 — Boise, ID', icon: pinIcon },
-          { lat: 28.61, lng: 77.23,  label: '💼 Internship — New Delhi, India', icon: pinIcon },
-          { lat: 25.32, lng: 83.01,  label: '🎓 BHU &amp; IRRI SAH — Varanasi, India', icon: pinIcon },
-        ];
-        locations.forEach(loc => {
-          L.marker([loc.lat, loc.lng], { icon: loc.icon })
-            .addTo(map)
-            .bindPopup(loc.label);
-        });
-      }
-
-      // ── Trailing cursor ────────────────────────────────────────
-      const cursor = document.querySelector('.trailing-cursor');
-      let mouseX = 0, mouseY = 0;
-      let posX = 0, posY = 0;
-
-      document.addEventListener('mousemove', function(e) {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-      });
-
-      function animate() {
-        posX += (mouseX - posX) * 0.1;
-        posY += (mouseY - posY) * 0.1;
-        if (cursor) cursor.style.transform = `translate(${posX}px, ${posY}px)`;
-        requestAnimationFrame(animate);
-      }
-
-      animate();
-
-      // ── Abstract toggles ───────────────────────────────────────
-      document.querySelectorAll('.abstract-toggle').forEach(btn => {
-        btn.addEventListener('click', function() {
-          const abstract = this.nextElementSibling;
-          const icon = this.querySelector('i');
-          if (abstract && abstract.classList.contains('pub-abstract')) {
-            abstract.classList.toggle('open');
-            icon.classList.toggle('bi-chevron-down');
-            icon.classList.toggle('bi-chevron-up');
-          }
-        });
-      });
-
-      // ── GitHub last active ─────────────────────────────────────
-      const ghEl = document.getElementById('gh-last-active');
-      if (ghEl) {
-        fetch('https://api.github.com/users/xenificity')
-          .then(r => r.json())
-          .then(data => {
-            const updated = new Date(data.updated_at);
-            const days = Math.floor((Date.now() - updated) / 86400000);
-            ghEl.textContent = days === 0 ? 'active today' : `last active ${days} day${days !== 1 ? 's' : ''} ago`;
-          })
-          .catch(() => { ghEl.textContent = 'github.com/xenificity'; });
-      }
-
-      // ── Terminal Easter Egg ────────────────────────────────────
-      const termBtn = document.getElementById('terminalBtn');
-      const termOverlay = document.getElementById('terminal-overlay');
-      const termClose = document.getElementById('terminalClose');
-      const termInput = document.getElementById('terminalInput');
-      const termOutput = document.getElementById('terminalOutput');
-
-      function openTerminal() {
-        termOverlay.style.display = 'flex';
-        setTimeout(() => termInput && termInput.focus(), 100);
-      }
-      function closeTerminal() {
-        termOverlay.style.display = 'none';
-      }
-
-      if (termBtn) termBtn.addEventListener('click', openTerminal);
-      if (termClose) termClose.addEventListener('click', closeTerminal);
-      if (termOverlay) {
-        termOverlay.addEventListener('click', function(e) {
-          if (e.target === termOverlay) closeTerminal();
-        });
-      }
-      document.addEventListener('keydown', function(e) {
-        if (e.ctrlKey && e.key === 'k') { e.preventDefault(); termOverlay && termOverlay.style.display === 'none' ? openTerminal() : closeTerminal(); }
-        if (e.key === 'Escape') closeTerminal();
-      });
-
-      const termCommands = {
-        help: () => `<table class="term-table"><tr><th>Command</th><th>Description</th></tr><tr><td>about</td><td>About Ajay</td></tr><tr><td>publications</td><td>Top papers</td></tr><tr><td>skills</td><td>Technical skills</td></tr><tr><td>contact</td><td>Contact info</td></tr><tr><td>github</td><td>Open GitHub profile</td></tr><tr><td>scholar</td><td>Open Google Scholar</td></tr><tr><td>hire</td><td>Hiring info</td></tr><tr><td>date</td><td>Current date</td></tr><tr><td>whoami</td><td>Identity</td></tr><tr><td>clear</td><td>Clear terminal</td></tr></table>`,
-        about: () => 'PhD Candidate in CS at Mizzou. Researcher in distributed computing, ML, and bioinformatics.',
-        publications: () => '1. [2025] Optimizing Variant Calling Pipeline Using GPU-Enabled Machines — ACM BCB<br>2. [2025] VariantKG: Scalable Genomic Variants using Knowledge Graphs — Frontiers<br>3. [2024] Et-GWAS: Extreme-Trait GWAS on 3,000 Rice Genomes — Life Science Alliance',
-        skills: () => 'Python(100%) | TensorFlow(95%) | Apache Spark(90%) | LLMs(92%) | SQL(88%)',
-        contact: () => '&#x1F4E7; ajay.kumar@missouri.edu | &#x1F4C5; calendly.com/ajay-ducs/30min',
-        github: () => { window.open('https://github.com/xenificity', '_blank'); return '&#x1F419; github.com/xenificity — opening...'; },
-        scholar: () => { window.open('https://scholar.google.com/citations?user=lVXFrj0AAAAJ', '_blank'); return '&#x1F393; Google Scholar — opening...'; },
-        hire: () => '&#x1F680; Open to full-time SWE / DS / ML roles. Email: ajay.kumar@missouri.edu',
-        date: () => new Date().toDateString(),
-        whoami: () => 'ajay-kumar — PhD Candidate, researcher, builder',
-        clear: () => { termOutput.innerHTML = ''; return null; }
-      };
-
-      if (termInput) {
-        termInput.addEventListener('keydown', function(e) {
-          if (e.key === 'Enter') {
-            const cmd = this.value.trim().toLowerCase();
-            this.value = '';
-            if (!cmd) return;
-            const cmdLine = document.createElement('div');
-            cmdLine.className = 'terminal-line';
-            cmdLine.innerHTML = `<span class="terminal-prompt-inline">ajay@research:~$</span> ${cmd}`;
-            termOutput.appendChild(cmdLine);
-
-            const respLine = document.createElement('div');
-            respLine.className = 'terminal-line terminal-response';
-            if (termCommands[cmd]) {
-              const result = termCommands[cmd]();
-              if (result !== null) respLine.innerHTML = result;
-            } else {
-              respLine.innerHTML = `Command not found: ${cmd}. Type <span class="cmd-highlight">help</span> for available commands.`;
-            }
-            if (respLine.innerHTML) termOutput.appendChild(respLine);
-            termOutput.scrollTop = termOutput.scrollHeight;
-          }
-        });
-      }
-
-    });
-  </script>
-  <script>
-    // ── Particles.js Hero ──────────────────────────────────────
-    document.addEventListener('DOMContentLoaded', function() {
-      if (typeof particlesJS !== 'undefined') {
-        particlesJS('particles-js', {
-          particles: {
-            number: { value: 60, density: { enable: true, value_area: 800 } },
-            color: { value: '#149ddd' },
-            opacity: { value: 0.35, random: true },
-            size: { value: 3, random: true },
-            line_linked: { enable: true, distance: 130, color: '#149ddd', opacity: 0.2, width: 1 },
-            move: { enable: true, speed: 2, direction: 'none', random: true, out_mode: 'out' }
-          },
-          interactivity: {
-            detect_on: 'canvas',
-            events: { onhover: { enable: true, mode: 'grab' }, onclick: { enable: true, mode: 'push' }, resize: true },
-            modes: { grab: { distance: 140, line_linked: { opacity: 0.5 } }, push: { particles_nb: 3 } }
-          },
-          retina_detect: true
-        });
-      }
-    });
-  </script>
-  <script>
-    // ── Skills Radar Chart ─────────────────────────────────────
-    document.addEventListener('DOMContentLoaded', function() {
-      const radarCanvas = document.getElementById('skillsRadar');
-      if (!radarCanvas || typeof Chart === 'undefined') return;
-
-      const radarLabels = ['Machine Learning','Big Data & Cloud','Generative AI','Programming','Data Analysis','Research & Writing','Web Development','Bioinformatics'];
-      const radarData = [95, 88, 90, 95, 92, 92, 83, 85];
-
-      const isDark = () => document.body.classList.contains('dark-mode');
-      const getGridColor = () => isDark() ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.07)';
-      const getLabelColor = () => isDark() ? '#c9d1d9' : '#444';
-
-      const radarChart = new Chart(radarCanvas, {
-        type: 'radar',
-        data: {
-          labels: radarLabels,
-          datasets: [{
-            label: 'Skill Level',
-            data: radarData,
-            fill: true,
-            backgroundColor: 'rgba(20,157,221,0.2)',
-            borderColor: '#149ddd',
-            pointBackgroundColor: '#149ddd',
-            pointBorderColor: '#fff',
-            pointHoverBackgroundColor: '#fff',
-            pointHoverBorderColor: '#149ddd',
-            borderWidth: 2
-          }]
-        },
-        options: {
-          responsive: true,
-          plugins: { legend: { display: false } },
-          scales: {
-            r: {
-              min: 0, max: 100,
-              ticks: { stepSize: 20, color: getLabelColor(), backdropColor: 'transparent', font: { size: 10 } },
-              pointLabels: { color: getLabelColor(), font: { size: 12, family: "'Poppins', sans-serif" } },
-              grid: { color: getGridColor() },
-              angleLines: { color: getGridColor() }
-            }
-          }
-        }
-      });
-
-      // Update radar chart on dark mode toggle
-      const darkToggle = document.getElementById('darkModeToggle');
-      if (darkToggle) {
-        darkToggle.addEventListener('click', function() {
-          setTimeout(() => {
-            radarChart.options.scales.r.ticks.color = getLabelColor();
-            radarChart.options.scales.r.pointLabels.color = getLabelColor();
-            radarChart.options.scales.r.grid.color = getGridColor();
-            radarChart.options.scales.r.angleLines.color = getGridColor();
-            radarChart.update();
-          }, 50);
-        });
-      }
-    });
-
-    // ── Research Knowledge Graph (D3.js) ───────────────────────
-    document.addEventListener('DOMContentLoaded', function() {
-      const kgSvg = document.getElementById('kg-svg');
-      if (!kgSvg || typeof d3 === 'undefined') return;
-
-      const nodes = [
-        {id:'gpu-var',label:'GPU Variant Calling',type:'paper'},
-        {id:'variantkg',label:'VariantKG',type:'paper'},
-        {id:'etgwas',label:'Et-GWAS',type:'paper'},
-        {id:'g2pdeep',label:'G2PDeep-v2',type:'paper'},
-        {id:'cikm',label:'CIKM Demo',type:'paper'},
-        {id:'deepmap',label:'DeepMap',type:'paper'},
-        {id:'gpu',label:'GPU Computing',type:'topic'},
-        {id:'kg',label:'Knowledge Graphs',type:'topic'},
-        {id:'dist',label:'Distributed Computing',type:'topic'},
-        {id:'genomics',label:'Genomics',type:'topic'},
-        {id:'mldl',label:'ML / Deep Learning',type:'topic'},
-        {id:'llm',label:'LLMs & Gen AI',type:'topic'},
-        {id:'bigdata',label:'Big Data',type:'topic'},
-        {id:'spark',label:'Apache Spark',type:'tool'},
-        {id:'fabric',label:'FABRIC',type:'tool'},
-        {id:'aws',label:'AWS',type:'tool'},
-        {id:'tf',label:'TensorFlow',type:'tool'},
-        {id:'acmbcb',label:'ACM BCB',type:'venue'},
-        {id:'acmcikm',label:'ACM CIKM',type:'venue'},
-        {id:'frontiers',label:'Frontiers',type:'venue'}
-      ];
-
-      const links = [
-        {source:'gpu-var',target:'gpu'},{source:'gpu-var',target:'fabric'},{source:'gpu-var',target:'dist'},{source:'gpu-var',target:'acmbcb'},
-        {source:'variantkg',target:'kg'},{source:'variantkg',target:'spark'},{source:'variantkg',target:'dist'},{source:'variantkg',target:'frontiers'},{source:'variantkg',target:'bigdata'},
-        {source:'cikm',target:'dist'},{source:'cikm',target:'spark'},{source:'cikm',target:'fabric'},{source:'cikm',target:'acmcikm'},{source:'cikm',target:'bigdata'},
-        {source:'etgwas',target:'genomics'},{source:'etgwas',target:'mldl'},
-        {source:'g2pdeep',target:'mldl'},{source:'g2pdeep',target:'tf'},
-        {source:'deepmap',target:'mldl'},{source:'deepmap',target:'genomics'}
-      ];
-
-      const colors = {paper:'#149ddd',topic:'#f7a737',tool:'#18d26e',venue:'#9b59b6'};
-      const radii = {paper:14,topic:10,tool:10,venue:10};
-
-      const container = document.getElementById('kg-container');
-      const w = container ? container.offsetWidth : 800;
-      const h = 480;
-
-      const svg = d3.select('#kg-svg').attr('width', w).attr('height', h);
-      const g = svg.append('g');
-
-      const zoom = d3.zoom().scaleExtent([0.4,3]).on('zoom', e => g.attr('transform', e.transform));
-      svg.call(zoom);
-
-      const sim = d3.forceSimulation(nodes)
-        .force('link', d3.forceLink(links).id(d => d.id).distance(80))
-        .force('charge', d3.forceManyBody().strength(-300))
-        .force('center', d3.forceCenter(w/2, h/2))
-        .force('collision', d3.forceCollide().radius(d => radii[d.type] + 15));
-
-      const link = g.append('g').selectAll('line').data(links).join('line')
-        .attr('stroke', '#ccc').attr('stroke-width', 1.2).attr('stroke-opacity', 0.6);
-
-      const node = g.append('g').selectAll('g').data(nodes).join('g')
-        .call(d3.drag()
-          .on('start', (e,d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; })
-          .on('drag', (e,d) => { d.fx=e.x; d.fy=e.y; })
-          .on('end', (e,d) => { if (!e.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }));
-
-      node.append('circle')
-        .attr('r', d => radii[d.type])
-        .attr('fill', d => colors[d.type])
-        .attr('stroke', '#fff').attr('stroke-width', 2);
-
-      node.append('text')
-        .attr('dy', d => radii[d.type] + 14)
-        .attr('text-anchor', 'middle')
-        .attr('font-size', 10)
-        .attr('font-family', "'Open Sans', sans-serif")
-        .attr('fill', () => document.body.classList.contains('dark-mode') ? '#c9d1d9' : '#444')
-        .text(d => d.label);
-
-      const tooltip = document.getElementById('kg-tooltip');
-      node.on('mouseenter', function(e, d) {
-        if (tooltip) {
-          tooltip.innerHTML = `<strong>${d.label}</strong><br><span style="text-transform:capitalize">${d.type}</span>`;
-          tooltip.style.display = 'block';
-        }
-      }).on('mousemove', function(e) {
-        if (tooltip) {
-          const rect = container.getBoundingClientRect();
-          tooltip.style.left = (e.clientX - rect.left + 12) + 'px';
-          tooltip.style.top  = (e.clientY - rect.top - 10) + 'px';
-        }
-      }).on('mouseleave', function() {
-        if (tooltip) tooltip.style.display = 'none';
-      });
-
-      sim.on('tick', () => {
-        link.attr('x1',d=>d.source.x).attr('y1',d=>d.source.y).attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);
-        node.attr('transform', d => `translate(${d.x},${d.y})`);
-      });
-
-      // Update label color on dark mode toggle
-      const dmBtn = document.getElementById('darkModeToggle');
-      if (dmBtn) {
-        dmBtn.addEventListener('click', function() {
-          setTimeout(() => {
-            const isDark = document.body.classList.contains('dark-mode');
-            g.selectAll('text').attr('fill', isDark ? '#c9d1d9' : '#444');
-            link.attr('stroke', isDark ? '#444' : '#ccc');
-          }, 50);
-        });
-      }
-    });
-  </script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+<script src="assets/js/site.js?v=2026-10-22" defer></script>
 </body>
-
 </html>
