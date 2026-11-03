@@ -102,8 +102,8 @@
       [39.95, -75.165, "Philadelphia, PA", "ACM BCB 2025 · paper talk"],
       [43.615, -116.2, "Boise, ID", "ACM CIKM 2024 · demo"],
       [45.764, 4.835, "Lyon, France", "ISMB/ECCB 2023 · G2PDeep tutorial"],
-      [40.35, -74.66, "Princeton, NJ", "Siemens Technology · 2026"],
-      [38.94, -92.33, "Columbia, MO", "University of Missouri · NSF workshop 2026"],
+      [40.35, -74.66, "Princeton, NJ", "Siemens Technology · research internship, 2026"],
+      [38.94, -92.33, "Columbia, MO", "University of Missouri · Ph.D., NSF workshop 2026"],
       [17.385, 78.486, "Hyderabad, India", "IRRI South Asia Hub · trained 100+ scientists"],
       [28.61, 77.21, "New Delhi, India", "University of Delhi · DIC-SPA"],
       [25.27, 82.99, "Varanasi, India", "Banaras Hindu University · M.Sc."],
@@ -148,38 +148,39 @@
       ["teaching", "courses and workshops"],
       ["awards", "fellowships and prizes"],
       ["news", "press and recent updates"],
+      ["service", "peer review, committees, judging"],
       ["contact", "email, calendar, socials"],
       ["hire", "what I am looking for"],
       ["cv", "download the PDF"],
       ["clear", "wipe the screen"],
     ]),
-    about: () => `Ajay Kumar. Ph.D. candidate in computer science at the University of Missouri (4.0 GPA), defending December 2026.
+    about: () => `Ajay Kumar. Computer scientist and Ph.D. candidate at the University of Missouri (4.0 GPA), expected Spring 2027.
 I make large scientific workloads run faster and cheaper on clusters, and I build evaluation systems that tell you when an LLM pipeline is wrong.
-Currently a research intern in Siemens' Foundational Technology AI group in Princeton, NJ.
+Currently a research intern at Siemens Technology in Princeton, NJ.
 Before the Ph.D.: statistical genomics at the International Rice Research Institute, where I trained 100+ scientists.`,
     now: () => kv([
-      ["siemens", "validation framework for agentic LLM pipelines · 2 invention disclosures · paper under review at CAIN 2027"],
-      ["thesis", "optimizing scientific workflows on NSF cyberinfrastructure (FABRIC, CloudLab) · defense Dec 2026"],
-      ["latest", "DeepNeuroBench presented at IEEE IISWC 2026, Boulder · 72% less energy per subject at 10% of the cost"],
+      ["siemens", "validation for agentic LLM pipelines · 2 invention disclosures · 1 provisional patent · paper under review at CAIN 2027"],
+      ["thesis", "optimizing scientific workflows on NSF cyberinfrastructure (FABRIC, CloudLab) · expected Spring 2027"],
+      ["latest", "joined the CGO 2027 Artifact Evaluation Committee · presented at IEEE IISWC 2026 in Boulder"],
       ["seeking", "Applied Scientist · Research Scientist · ML Engineer roles, starting 2027"],
     ]),
     papers: () => [
-      ["2026", "DeepNeuroBench: cost- and energy-efficient neuroimaging workflows", "IEEE IISWC", "first author"],
-      ["2026", "Layer-boundary validation for a production LLM pipeline (Siemens)", "CAIN @ ICSE 2027", "under review"],
-      ["2025", "GPU-enabled variant calling on human genomes", "ACM BCB", "first author"],
+      ["2026", "A benchmark for cost and energy-efficient neuroimaging workflows", "IEEE IISWC", "first author"],
+      ["2026", "Validating a production LLM-to-knowledge-graph pipeline (Siemens)", "CAIN 2027", "under review"],
+      ["2025", "GPU-enabled variant calling on human genomes", "ACM BCB Companion", "first author"],
       ["2025", "VariantKG: knowledge graphs + graph ML over 650 GB of variants", "Frontiers in Big Data", ""],
       ["2024", "Democratizing variant calling on commodity clusters", "ACM CIKM demo", ""],
       ["2024", "Et-GWAS: rare variants in the 3,000 rice genome", "Life Science Alliance", ""],
-      ["2023", "DeepMap: four-line deep learning for crop breeding", "bioRxiv", ""],
+      ["2023", "DeepMap: four-line deep learning for crop breeding", "bioRxiv preprint", "first author"],
     ].map(([y, t, v, n]) => `<span class="t-amber">${y}</span>  ${t}  <span class="t-dim">· ${v}${n ? " · " + n : ""}</span>`).join("\n")
       + `\n\n${link("#research", "→ full list with abstracts")}`,
     projects: () => kv([
-      ["deepneurobench", "benchmark for neuroimaging pipelines on commodity clusters (IISWC 2026)"],
-      ["gpu-gaf", "distributed multi-GPU variant calling, 2× throughput via job-shop scheduling"],
-      ["variantkg", "1,508 genomes → 4 billion RDF statements, queryable with SPARQL"],
-      ["g2pdeep-v2", "multi-omics deep learning platform used by 120+ researchers"],
-      ["lameness-predictor", "1st place, Claude Builder Club Hackathon · live Streamlit app"],
-      ["operation-fit", "iOS fitness planner, on the App Store · SwiftUI, on-device AI"],
+      ["deepneurobench", "benchmark for neuroimaging pipelines on commodity clusters (IEEE IISWC 2026)"],
+      ["gpu-gaf", "GPU variant calling, 2× speedup over greedy scheduling"],
+      ["variantkg", "1,508 genomes → about 4 billion RDF statements, queryable with SPARQL"],
+      ["g2pdeep-v2", "multi-omics prediction platform used by about 120 researchers"],
+      ["lameness-predictor", "1st place, Claude Builder Club Hackathon · built with Dr. Kevin Keegan"],
+      ["ios-apps", "Operation Fit, CoMo Events and StackDrop, all on the App Store"],
     ]) + `\n${link("#projects", "→ all projects")}`,
     skills: () => kv([
       ["llms", "fine-tuning, RAG, agentic pipelines, evaluation and validation, Hugging Face"],
@@ -192,18 +193,26 @@ Before the Ph.D.: statistical genomics at the International Rice Research Instit
       ["CS 4080", "Parallel Programming for HPC"],
       ["CS 3910", "Advanced Cybersecurity"],
       ["CMP_SC 1300", "Computing with Data in Python"],
-      ["CS/ECE 4001", "Integrated Cyberinfrastructure & Biomedical Engineering"],
-      ["award", "Outstanding Teaching Assistant, University of Missouri"],
-      ["workshops", "100+ scientists trained at IRRI · NSF Scientific Workflows workshop organizer, 2026"],
+      ["CS/ECE 4001", "Integrated Cyberinfrastructure"],
+      ["award", "Outstanding Teaching Assistant, Department of EECS, 2026"],
+      ["workshops", "100+ scientists trained at IRRI · co-organizer and instructor, NSF workshop, 2026"],
     ]),
     awards: () => kv([
       ["$5,500", "FABRIC competitive travel fellowship"],
-      ["$2,500", "ACM UPE Executive Council Award (as chapter VP)"],
+      ["$2,500", "UPE Executive Council Award"]
+      , ["$2,000", "KNIT9 / MERIF travel award"],
       ["$1,500", "IEEE IISWC 2026 travel award"],
-      ["$500", "UPE Outstanding Chapter Award"],
+      ["$500", "UPE Outstanding Chapter Award, to the Missouri chapter"],
       ["1st place", "Claude Builder Club Hackathon, Mizzou"],
-      ["award", "Outstanding Teaching Assistant · Outstanding Ph.D. Student"],
+      ["awards", "Outstanding Teaching Assistant · Outstanding Ph.D. Student"],
     ]),
+    service: () => kv([
+      ["committee", "ACM/IEEE CGO 2027 Artifact Evaluation Committee"],
+      ["reviewer", "AMIA 2024 (24 reviews), NeurIPS ethics review, ACM ICMR, Frontiers journals"],
+      ["sub-reviewer", "IEEE MDM, ACM/IEEE JCDL, ICWE, IEEE BIBM"],
+      ["judge", "Mizzou Engineering HS Research Competition, Show Me Research Week, TigerX Hackathon"],
+      ["leadership", "Vice President, Upsilon Pi Epsilon, Mizzou chapter"],
+    ]) + `\n${link("#service", "→ full list")}`,
     news: () => `<span class="t-amber">Feb 2026</span>  Mizzou Engineering: "Computer science students take on neuroscience"\n<span class="t-amber">Jan 2025</span>  Mizzou Engineering: "Increasing access to cybertraining technology"\n\n${link("#news", "→ press and updates")}`,
     contact: () => kv([
       ["email", link("mailto:ajay.ducs@gmail.com", "ajay.ducs@gmail.com")],
@@ -211,16 +220,17 @@ Before the Ph.D.: statistical genomics at the International Rice Research Instit
       ["calendar", link("https://calendly.com/ajay-ducs/30min", "calendly.com/ajay-ducs/30min")],
       ["linkedin", link("https://www.linkedin.com/in/xenificity/", "linkedin.com/in/xenificity")],
       ["github", link("https://github.com/xenificity", "github.com/xenificity")],
+      ["orcid", link("https://orcid.org/0000-0002-9722-5649", "0000-0002-9722-5649")],
       ["scholar", link("https://scholar.google.com/citations?user=lVXFrj0AAAAJ", "Google Scholar")],
     ]),
-    hire: () => `I am looking for <span class="t-green">Applied Scientist, Research Scientist and ML Engineer</span> roles starting in 2027, after my December 2026 defense.
+    hire: () => `I am looking for <span class="t-green">Applied Scientist, Research Scientist and ML Engineer</span> roles in 2027. My Ph.D. is expected Spring 2027.
 Strongest fit: LLM evaluation and validation, agentic systems, distributed ML infrastructure, scientific computing.
-Open to on-site, hybrid or remote in the US. I will need H-1B sponsorship.
+Open to on-site, hybrid or remote roles in the US.
 \n${link("#contact", "→ get in touch")}  ·  ${link("assets/files/AjayKumar_CV.pdf", "→ CV (PDF)")}`,
     cv: () => { window.open("assets/files/AjayKumar_CV.pdf", "_blank"); return `Opening ${link("assets/files/AjayKumar_CV.pdf", "AjayKumar_CV.pdf")}…`; },
     whoami: () => "ajay — Ph.D. candidate, builder, occasional podcast host",
     pwd: () => "/home/ajay/portfolio",
-    ls: () => `about/  research/  projects/  teaching/  news/  contact/  <span class="t-green">AjayKumar_CV.pdf</span>`,
+    ls: () => `about/  research/  projects/  teaching/  service/  news/  contact/  <span class="t-green">AjayKumar_CV.pdf</span>`,
     date: () => new Date().toString(),
     sudo: () => `<span class="t-amber">ajay is not in the sudoers file. This incident will be reported.</span> (Just kidding. Try <b>hire</b>.)`,
     clear: () => { $$(".t-out, .t-line", body).forEach((n) => n.remove()); return null; },
@@ -242,7 +252,7 @@ Open to on-site, hybrid or remote in the US. I will need H-1B sponsorship.
       const sec = (rest[0] || "").replace(/^#|\/$/g, "");
       const target = document.getElementById(sec);
       if (target) { out(`→ ${sec}`); target.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth" }); }
-      else out(`<span class="t-amber">no such section: ${esc(sec)}</span>  (try: about, research, projects, teaching, news, contact)`);
+      else out(`<span class="t-amber">no such section: ${esc(sec)}</span>  (try: about, research, projects, teaching, service, news, contact)`);
       return;
     }
     if (name === "echo") { out(esc(rest.join(" "))); return; }
