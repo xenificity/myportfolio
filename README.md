@@ -25,7 +25,7 @@ Personal site of Ajay Kumar. Plain HTML, CSS and JavaScript, no build step, host
 
 ## Contact form
 
-The form posts to Formspree. Create a free form at formspree.io, then replace `YOUR_FORM_ID` in the form's `action` attribute. Until then, submitting opens the visitor's mail app with the message prefilled, so nothing is lost.
+The form posts to the Formspree form "Portfolio contact" (`mbggqgyk`), which emails ajay.ducs@gmail.com. Manage it at formspree.io/forms. Analytics are at ajay-kumar.goatcounter.com.
 
 ## Preview locally
 
